@@ -1,5 +1,4 @@
 #include "Puzzle8.h"
-
 #include <stdio.h>
 
 CPuzzle8::CPuzzle8(void)
@@ -10,7 +9,7 @@ CPuzzle8::~CPuzzle8(void)
 {
 }
 
-// Cria um objecto que é uma cópia deste
+// Cria um objecto que ï¿½ uma cï¿½pia deste
 TProcuraConstrutiva* CPuzzle8::Duplicar(void)
 {
 	CPuzzle8 *clone=new CPuzzle8;
@@ -21,7 +20,7 @@ TProcuraConstrutiva* CPuzzle8::Duplicar(void)
 // Coloca o objecto no estado inicial da procura
 void CPuzzle8::SolucaoVazia(void)
 {
-	// colocar a posição final
+	// colocar a posiï¿½ï¿½o final
 	puzzle.Count(9);
 	for(int i=0;i<9;i++)
 		puzzle[i]=i;
@@ -39,9 +38,9 @@ void CPuzzle8::SolucaoVazia(void)
 
 }
 
-// Coloca em sucessores a lista de objectos sucessores (são alocados neste método e têm de ser apagados)
-// O custo não necessita de ser preenchido, caso seja sempre unitário
-// actualizar geracoes e expansoes neste método
+// Coloca em sucessores a lista de objectos sucessores (sï¿½o alocados neste mï¿½todo e tï¿½m de ser apagados)
+// O custo nï¿½o necessita de ser preenchido, caso seja sempre unitï¿½rio
+// actualizar geracoes e expansoes neste mï¿½todo
 void CPuzzle8::Sucessores(TVector<TProcuraConstrutiva*>&sucessores, TVector<int>&custo)
 {
 	if(zero>=3) { // subir
@@ -77,15 +76,15 @@ bool CPuzzle8::SolucaoCompleta(void)
 }
 
 // Redefinir para poder utilizar os algoritmos informados
-// O custo desde o nó inicial é tido em conta, esta função deve devolver o custo estimado
-// nunca sobre estimando, deste estado até ao nó final mais próximo (é um mínimo)
-// chamar para actualiação de avaliacoes
+// O custo desde o nï¿½ inicial ï¿½ tido em conta, esta funï¿½ï¿½o deve devolver o custo estimado
+// nunca sobre estimando, deste estado atï¿½ ao nï¿½ final mais prï¿½ximo (ï¿½ um mï¿½nimo)
+// chamar para actualiaï¿½ï¿½o de avaliacoes
 int CPuzzle8::Heuristica(void)
 {
 	int resultado=0;
 	TProcuraConstrutiva::Heuristica();
 
-	// distância de manhatan de cada posição à sua possição final
+	// distï¿½ncia de manhatan de cada posiï¿½ï¿½o ï¿½ sua possiï¿½ï¿½o final
 	for(int i=1;i<9;i++) {
 		int posicaoI=0;
 		while(puzzle[posicaoI]!=i)
@@ -97,8 +96,8 @@ int CPuzzle8::Heuristica(void)
 }
 
 
-// Escrever informação de debug sobre o objecto currente 
-// (utilizar variável TProcuraConstrutiva::debug para seleccionar o detalhe pretendido)
+// Escrever informaï¿½ï¿½o de debug sobre o objecto currente 
+// (utilizar variï¿½vel TProcuraConstrutiva::debug para seleccionar o detalhe pretendido)
 void CPuzzle8::Debug(void)
 {
 	for(int i=0;i<3;i++) {
@@ -123,10 +122,10 @@ bool CPuzzle8::operator!=(CPuzzle8&estado)
 
 bool CPuzzle8::Distinto(TProcuraConstrutivaComCiclos*estado)
 {
-	// se quiser saber o que seria a procura se não se impedir ciclos,
-	// simplesmente retorne sempre true e comente o restante código 
+	// se quiser saber o que seria a procura se nï¿½o se impedir ciclos,
+	// simplesmente retorne sempre true e comente o restante cï¿½digo 
 
-	// para não produzir ciclos:
+	// para nï¿½o produzir ciclos:
 	CPuzzle8 *aux=(CPuzzle8*)estado;
 	return (*this)!=(*aux);
 }
