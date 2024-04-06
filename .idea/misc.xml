@@ -4,5 +4,6 @@
     <option name="executionMode" value="BINARY" />
     <option name="pathToExecutable" value="$USER_HOME$/anaconda3/bin/black" />
   </component>
+  <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$" />
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12" project-jdk-type="Python SDK" />
 </project>
