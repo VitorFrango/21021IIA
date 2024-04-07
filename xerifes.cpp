@@ -1,130 +1,140 @@
-//
-// Created by Vitor Frango on 06/04/2024.
-//
 #include <iostream>
-#include <array>
+#include <vector>
+#include <queue>
 #include <iomanip>
+#include <array>
+
+using namespace std;
 
 const int LARGURA_MAXIMA = 20;
 const int NUM_INSTANCIAS = 10;
-const int VERBA_DISPONIVEL = 12;
+
+struct Estado {
+    vector<vector<char>> mapaProtecao;
+    vector<vector<bool>> protegido;
+    int verbaRestante;
+    int familiasProtegidas;
+};
+
+struct Protecao {
+    vector<vector<char>> mapaProtecao;
+    int familiasProtegidas;
+    int verbaRestante;
+};
+
+struct Comparador {
+    bool operator()(const Estado& a, const Estado& b) {
+        return a.verbaRestante > b.verbaRestante;
+    }
+};
 
 struct Instancia {
     int N, M, Verba, ProtegerA, ProtegerB;
+    vector<vector<int>> territorio;
 };
 
-const Instancia instancias[NUM_INSTANCIAS] = {
-        {5, 5, 4, 19, 20},
-        {5, 5, 4, 21, 22},
-        {7, 7, 8, 67, 68},
-        {7, 7, 8, 59, 60},
-        {9, 9, 12, 125, 126},
-        {9,9, 12, 57, 58},
-        {11, 11, 16, 140, 141},
-        {11, 11, 16, 93, 94},
-        {13, 13, 20, 211, 212},
-        {13, 13, 20, 125, 126}
-};
+std::vector<Instancia> instancias = {
+        {5, 5, 10, 15, 20, {{0, 2, 0, 3, 0}, {2, 1, 0, 1, 2}, {0, 0, 0, 2, 0}, {3, 1, 2, 0, 1}, {0, 1, 0, 3, 0}}},
+        {6, 6, 12, 20, 25, {{1, 0, 2, 0, 1, 3}, {0, 2, 0, 1, 0, 2}, {2, 0, 3, 2, 0, 1}, {0, 1, 0, 0, 2, 0}, {1, 0, 2, 1, 0, 3}, {0, 2, 0, 3, 1, 0}}},
+        {7, 7, 15, 25, 30, {{0, 2, 0, 3, 0, 1, 0}, {2, 1, 0, 1, 2, 0, 2}, {0, 0, 0, 2, 0, 1, 0}, {3, 1, 2, 0, 1, 0, 3}, {0, 1, 0, 3, 0, 2, 0}, {1, 0, 1, 0, 2, 0, 1}, {0, 2, 0, 3, 0, 1, 0}}},
+        {8, 8, 20, 30, 35, {{0, 2, 0, 3, 0, 1, 0, 2}, {2, 1, 0, 1, 2, 0, 2, 1}, {0, 0, 0, 2, 0, 1, 0, 3}, {3, 1, 2, 0, 1, 0, 3, 0}, {0, 1, 0, 3, 0, 2, 0, 1}, {1, 0, 1, 0, 2, 0, 1, 0}, {0, 2, 0, 3, 0, 1, 0, 2}, {2, 1, 0, 1, 2, 0, 2, 1}}},
+        {9, 9, 25, 35, 40, {{0, 2, 0, 3, 0, 1, 0, 2, 0}, {2, 1, 0, 1, 2, 0, 2, 1, 0}, {0, 0, 0, 2, 0, 1, 0, 3, 0}, {3, 1, 2, 0, 1, 0, 3, 0, 1}, {0, 1}}} ,
 
-const std::array<std::array<std::array<int, LARGURA_MAXIMA>, LARGURA_MAXIMA>, NUM_INSTANCIAS> mapas = {{
-                                                                                                               // Inicialização dos mapas...
-                                                                                                               // Exemplo para as primeiras duas instâncias
-                                                                                                               {
-                                                                                                                       {{0, 7, 0, 0, 4},
-                                                                                                                        {0, 0, 0, 4, 0},
-                                                                                                                        {1, 0, 0, 0, 0},
-                                                                                                                        {4, 4, 1, 0, 0},
-                                                                                                                        {6, 0, 3, 4, 4}},
-                                                                                                                       // Resto preenchido com zeros
-                                                                                                               },
-                                                                                                               {
-                                                                                                                       {{4, 0, 0, 10, 1},
-                                                                                                                        {1, 0, 0, 0, 0},
-                                                                                                                        {0, 0, 1, 6, 3},
-                                                                                                                        {0, 4, 0, 0, 2}, {8, 0, 6, 3, 0}},
-                                                                                                                       // Resto preenchido com zeros
-                                                                                                               },
-                                                                                                               // ... Complete com os outros mapas
-                                                                                                       }};
+        };
 
-class CMapa {
-    int mapa[LARGURA_MAXIMA][LARGURA_MAXIMA];
-    bool protecao[LARGURA_MAXIMA][LARGURA_MAXIMA];  // Nova matriz para rastrear proteção
-    Instancia instancia;
-
-public:
-    CMapa(int id) : instancia(instancias[id - 1]) {
-        inicializarMapa(id - 1);
-    }
-
-    void inicializarMapa(int id) {
-        for (int i = 0; i < LARGURA_MAXIMA; i++) {
-            for (int j = 0; j < LARGURA_MAXIMA; j++) {
-                protecao[i][j] = false;  // Inicializa a matriz de proteção
-                if (i < instancia.N && j < instancia.M) {
-                    mapa[i][j] = mapas[id][i][j];
-                } else {
-                    mapa[i][j] = 0;
+        class CMapa {
+            public:
+            static int calcularRaio(int deputados) {
+                switch (deputados) {
+                    case 0:
+                        return 1;
+                    case 1:
+                        return 2;
+                    case 5:
+                        return 3;
+                    case 13:
+                        return 4;
+                    default:
+                        return 1;
                 }
             }
-        }
-    }
 
-    // Método para calcular o raio de proteção
-    int calcularRaio(int deputados) {
-        switch (deputados) {
-            case 0: return 1;
-            case 1: return 2;
-            case 5: return 3;
-            case 13: return 4;
-            default: return 1; // caso padrão para apenas o xerife
-        }
-    }
+            static Estado expandirEstado(const Estado &estado, const Instancia &instancia, int x, int y) {
+                Estado novoEstado = estado;
+                if (instancia.territorio[x][y] > 0 && !estado.protegido[x][y]) {
+                    int maxDeputadosPossiveis = min(novoEstado.verbaRestante - 4, 13);
+                    int deputados = maxDeputadosPossiveis >= 5 ? (maxDeputadosPossiveis >= 13 ? 13 : 5) : 1;
+                    novoEstado.verbaRestante -= (4 + deputados);
+                    int raio = calcularRaio(deputados);
 
-    // Método para calcular e imprimir as informações e o mapa
-    void calcularEImprimir(int x, int y, int deputados) {
-        int raio = calcularRaio(deputados);
-        int familiasProtegidas = 0; // Variável para contar famílias protegidas
-        int custo = 4 + deputados; // Custo da delegacia e dos deputados
-        int moedasRestantes = VERBA_DISPONIVEL - custo; // Moedas restantes após deduzir o custo
-
-        // Marcar zonas protegidas e contar famílias protegidas
-        for (int i = std::max(0, x - raio); i <= std::min(x + raio, instancia.N - 1); ++i) {
-            for (int j = std::max(0, y - raio); j <= std::min(y + raio, instancia.M - 1); ++j) {
-                protecao[i][j] = true;
-                familiasProtegidas += mapa[i][j];
-            }
-        }
-
-        // Imprimir o mapa com as zonas protegidas marcadas
-        for (int i = 0; i < instancia.N; ++i) {
-            for (int j = 0; j < instancia.M; ++j) {
-                if (i == x && j == y) {
-                    std::cout << std::setw(2) << mapa[i][j] << "D ";
-                } else if (protecao[i][j]) {
-                    std::cout << std::setw(2) << mapa[i][j] << "! ";
-                } else {
-                    std::cout << std::setw(2) << mapa[i][j] << "  ";
+                    for (int i = max(0, x - raio); i <= min(instancia.N - 1, x + raio); i++) {
+                        for (int j = max(0, y - raio); j <= min(instancia.M - 1, y + raio); j++) {
+                            if (!novoEstado.protegido[i][j] && instancia.territorio[i][j] > 0) {
+                                novoEstado.mapaProtecao[i][j] = 'P';
+                                novoEstado.protegido[i][j] = true;
+                                novoEstado.familiasProtegidas += instancia.territorio[i][j];
+                            }
+                        }
+                    }
+                    novoEstado.mapaProtecao[x][y] = 'D';
                 }
+                return novoEstado;
             }
-            std::cout << std::endl;
+
+            static Protecao calculaProtecaoUniforme(const Instancia &instancia) {
+                priority_queue<Estado, vector<Estado>, Comparador> fronteira;
+                Estado inicial{vector<vector<char>>(instancia.N, vector<char>(instancia.M, ' ')),
+                               vector<vector<bool>>(instancia.N, vector<bool>(instancia.M, false)),
+                               instancia.Verba, 0};
+
+                fronteira.push(inicial);
+                while (!fronteira.empty()) {
+                    Estado atual = fronteira.top();
+                    fronteira.pop();
+                    if (atual.familiasProtegidas >= instancia.ProtegerA) {
+                        return {atual.mapaProtecao, atual.familiasProtegidas, atual.verbaRestante};
+                    }
+
+                    for (int i = 0; i < instancia.N; i++) {
+                        for (int j = 0; j < instancia.M; j++) {
+                            if (instancia.territorio[i][j] > 0 && !atual.protegido[i][j] && atual.verbaRestante >= 4) {
+                                Estado novoEstado = expandirEstado(atual, instancia, i, j);
+                                if (novoEstado.verbaRestante >= 0) {
+                                    fronteira.push(novoEstado);
+                                }
+                            }
+                        }
+                    }
+                }
+                return {inicial.mapaProtecao, inicial.familiasProtegidas, inicial.verbaRestante};
+            }
+        };
+
+        int main() {
+
+            int id = 1; // Escolher a instância
+            if (id > 0 && id <= instancias.size()) {
+                cout << "Processando instância " << id << "..." << endl;
+                Protecao protecao = CMapa::calculaProtecaoUniforme(instancias[id - 1]);
+
+                cout << "-- Mapa de Proteção --" << endl;
+                for (int i = 0; i < instancias[id - 1].N; ++i) {
+                    for (int j = 0; j < instancias[id - 1].M; ++j) {
+                        if (protecao.mapaProtecao[i][j] == 'D') {
+                            cout << setw(3) << 'D';
+                        } else if (protecao.mapaProtecao[i][j] == 'P') {
+                            cout << setw(3) << 'P';
+                        } else {
+                            cout << setw(3) << '.';
+                        }
+                    }
+                    cout << endl;
+                }
+                cout << "Famílias Protegidas: " << protecao.familiasProtegidas << endl;
+                cout << "Verba Restante: " << protecao.verbaRestante << " moedas" << endl;
+            } else {
+                cout << "ID da instância inválido." << endl;
+            }
+            return 0;
         }
 
-        // Imprimir informações adicionais
-        std::cout << "Famílias protegidas: " << familiasProtegidas << "/57\n";
-        std::cout << "Custo total: " << custo << " moedas de ouro\n";
-        std::cout << "Moedas restantes: " << moedasRestantes << " moedas de ouro\n";
-        std::cout << "Número de delegacias colocadas: 1\n";
-    }
-};
-int main() {
-    CMapa mapa(1); // Utiliza a instância 1
-
-    int x = 1; // Linha da delegacia
-    int y = 1; // Coluna da delegacia
-    int deputados = 0; // Número de deputados
-
-    mapa.calcularEImprimir(x, y, deputados);
-
-    return 0;
-}
