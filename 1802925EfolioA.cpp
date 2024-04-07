@@ -1,41 +1,51 @@
-//
+/*
 // Created by Vitor Frango on 06/04/2024.
-//
+
+ O código apresentado implementa um algoritmo de busca de custo uniforme. A busca de custo uniforme é um algoritmo de busca que expande o nó de menor custo, garantindo que o primeiro nó a atingir o objetivo seja o de menor custo.
+*/
 
 
 #include <iostream>
+#include <ostream>
 #include <vector>
-#include <tuple>
-#include <queue>
-#include <iomanip>
-#include <numeric>
-#include <chrono>
+#include <tuple>  // utilizado para criar tuplas para armazenar as coordenadas e o numero de deputados
+#include <queue>  // utilizado para a fila de prioridade para os estados
+#include <iomanip> // utilizado para formatar a saída
+#include <numeric>  // utilizado para somar os deputados
+#include <chrono>  // utilizado para medir o tempo
 
 using namespace std;
 
+
+// função para calcular o raio de proteção, baseado no número de deputados
 int raio_protecao(int deputados) {
+    // O raio de proteção é calculado com base no número de deputados
     switch (deputados) {
-        case 0: return 1; // 3x3 zones
-        case 1: return 2; // 5x5 zones
-        case 5: return 3; // 7x7 zones
-        case 13: return 4; // 9x9 zones
+        case 0: return 1;   // 3x3 zones
+        case 1: return 2;   // 5x5 zones
+        case 5: return 3;   // 7x7 zones
+        case 13: return 4;  // 9x9 zones
         default: return 0;
     }
 }
 
+// Estrutura para armazenar o estado atual
 struct Estado {
     vector<tuple<int, int, int>> delegacoes;
     int cost;
     int familas_protegidas;
 
+    // construtor para inicializar o estado
     Estado(vector<tuple<int, int, int>> delegacoes = {}, int cost = 0, int familas_protegidas = 0)
             : delegacoes(delegacoes), cost(cost), familas_protegidas(familas_protegidas) {}
 
+    // operador para comparar os estados com base no custo, necessário para a fila de prioridade
     bool operator>(const Estado& other) const {
         return cost > other.cost;
     }
 };
 
+// função para calcular o número de famílias protegidas com base no mapa e no estado atual
 int calcular_familas_protegidas(const vector<vector<int>>& map, const Estado& Estado) {
     int familas_protegidas = 0;
     vector<vector<bool>> protegida_por_delegados(map.size(), vector<bool>(map[0].size(), false));
@@ -57,11 +67,12 @@ int calcular_familas_protegidas(const vector<vector<int>>& map, const Estado& Es
     return familas_protegidas;
 }
 
+// função para gerar os sucessores do estado atual a partir do estado atual, do mapa e do orçamento
 vector<Estado> gerar_successores(const Estado& currente_Estado, const vector<vector<int>>& map, int budget) {
     vector<Estado> successores;
     vector<int> deputados_permitidos = {0, 1, 5, 13};
 
-    for (int deputados : deputados_permitidos) {
+    for (int deputados : deputados_permitidos) { // 0, 1, 5, 13
         int custo_da_delegacao = 4 + deputados; // 4 para a delegação e 1 para cada deputado
         if (currente_Estado.cost + custo_da_delegacao <= budget) {
             for (size_t i = 0; i < map.size(); ++i) {
@@ -81,6 +92,7 @@ vector<Estado> gerar_successores(const Estado& currente_Estado, const vector<vec
     return successores;
 }
 
+// Função para imprimir o mapa com o estado atual e o orçamento as delegações e as famílias protegidas
 void imprime_mapa(const vector<vector<int>>& map, const Estado& Estado, int budget) {
     for (size_t i = 0; i < map.size(); ++i) {
         for (size_t j = 0; j < map[i].size(); ++j) {
@@ -106,7 +118,7 @@ void imprime_mapa(const vector<vector<int>>& map, const Estado& Estado, int budg
             if (!isDelegacao) {
                 cout << setw(2) << map[i][j]; // mostrar o numero de familias
                 if (isProtegida) {
-                    cout << "X"; // adiciona "x" se Protegida
+                    cout << "\033[1;31mX\033[0m"; // adiciona "X" vermelho se Protegida; // adiciona "x" se Protegida
                 } else {
                     cout << " "; // mantem "  " se nao Protegida
                 }
@@ -115,7 +127,7 @@ void imprime_mapa(const vector<vector<int>>& map, const Estado& Estado, int budg
         cout << endl;
     }
 
-    // Calculate total Protegida families across the whole map for displaying purposes
+    // Calcula o total de familias protegidas e o custo total
     int total_Protegida = calcular_familas_protegidas(map, Estado);
 
     cout << "\nFamílias protegidas: " << Estado.familas_protegidas << "/" << total_Protegida << endl;
@@ -128,25 +140,31 @@ void imprime_mapa(const vector<vector<int>>& map, const Estado& Estado, int budg
     cout << "Número de delegacias colocadas: " << Estado.delegacoes.size() << endl;
 }
 
-
+ // Função para processar as instâncias do problema tentando encontrar uma solução dentro do tempo limite
 void instancias(int instancia_id, const vector<vector<int>>& map, int budget, int min_familiasA, int min_familiasB) {
     using namespace std::chrono;
     auto start = high_resolution_clock::now();
 
+    cout << "----------------------------------------" << endl; // Linha de separação entre as instâncias
     cout << "Processando a instância ID: " << instancia_id << endl;
+    cout << "Verba disponível: " << budget << " moedas de ouro" << endl;
+    cout << " D -> Delegado colocado \n X -> Família protegida\n";
+    cout << "----------------------------------------" << endl; // Linha de separação entre as instâncias
 
-    Estado last_state;
+    Estado last_state; // Último estado para exibição
     for (int min_families : {min_familiasA, min_familiasB}) {
         bool solution_found = false;
         int num_expansoes = 0;
         int num_geracoes = 0;
 
+        // Fila de prioridade para os estados e o estado de menor custo é sempre removido primeiro.
         priority_queue<Estado, vector<Estado>, greater<Estado>> pq;
         pq.push(Estado());
 
         while (!pq.empty()) {
             auto current_duration = duration_cast<milliseconds>(high_resolution_clock::now() - start);
-            if (current_duration.count() >= 60000) { // Verifica o limite de tempo
+            if (current_duration.count() > 59590) { // Verifica o limite de tempo de 59.59 segundos
+
                 break;
             }
 
@@ -160,6 +178,8 @@ void instancias(int instancia_id, const vector<vector<int>>& map, int budget, in
                 break; // Encontrou uma solução, pode parar para essa configuração
             }
 
+            // Gera os sucessores do estado atual e adiciona-os à fila de prioridade
+            // Cada sucessor é um novo estado com adiciona um delegação adicional
             vector<Estado> successores = gerar_successores(currente_Estado, map, budget);
             num_geracoes += successores.size();
             for (const auto& successor : successores) {
@@ -183,7 +203,7 @@ void instancias(int instancia_id, const vector<vector<int>>& map, int budget, in
 
         cout << "Número de expansões: " << num_expansoes << endl;
         cout << "Número de gerações: " << num_geracoes << endl;
-        cout << "Tempo gasto: " << duration.count() / 1000.0 << " segundos." << endl;
+        cout << "Tempo gasto: " << duration.count() / 1000.00 << " segundos." << endl;
         cout << "----------------------------------------" << endl;
     }
 }
@@ -192,28 +212,147 @@ void instancias(int instancia_id, const vector<vector<int>>& map, int budget, in
 int main() {
     vector<tuple<int, vector<vector<int>>, int, int, int>> instances = {
             // ID, Mapa, Verba, Min_FamiliasA, Min_FamiliasB
-            {1, {{1, 2, 3, 2, 1}, {2, 0, 4, 0, 2}, {3, 4, 5, 4, 3}, {2, 0, 4, 0, 2}, {1, 2, 3, 2, 1}}, 4, 19, 20},
-            {2, {{0, 1, 2, 1, 0}, {1, 3, 4, 3, 1}, {2, 4, 0, 4, 2}, {1, 3, 4, 3, 1}, {0, 1, 2, 1, 0}}, 4, 21, 22},
-            {3, {{1, 0, 2, 0, 1, 0, 2}, {0, 3, 0, 4, 0, 3, 0}, {2, 0, 5, 0, 2, 0, 1}, {0, 4, 0, 6, 0, 4, 0}, {1, 0, 2, 0, 3, 0, 2}, {0, 3, 0, 4, 0, 1, 0}, {2, 1, 0, 2, 0, 2, 1}}, 8, 67, 68},
-            {4, {{2, 1, 0, 1, 2, 1, 0}, {1, 0, 3, 0, 1, 0, 3}, {0, 3, 1, 4, 1, 3, 0}, {1, 0, 4, 0, 4, 0, 1}, {2, 1, 1, 4, 1, 1, 2}, {0, 3, 0, 1, 0, 3, 0}, {1, 2, 0, 2, 0, 2, 1}}, 8, 59, 60},
-            {5, {{0, 1, 0, 2, 1, 0, 1, 0, 2}, {1, 0, 3, 0, 2, 3, 0, 1, 0}, {0, 3, 0, 1, 4, 1, 0, 3, 0}, {2, 0, 1, 3, 0, 3, 1, 0, 2}, {1, 4, 0, 0, 5, 0, 0, 4, 1}, {0, 2, 3, 0, 0, 3, 2, 0, 1}, {1, 0, 0, 3, 0, 1, 0, 0, 2}, {0, 1, 2, 0, 4, 0, 2, 1, 0}, {2, 0, 1, 3, 1, 3, 0, 1, 2}}, 12, 125, 126},
-            {6, {{1, 0, 2, 0, 1, 0, 2, 0, 1}, {0, 3, 0, 4, 0, 3, 0, 4, 0}, {2, 0, 5, 0, 2, 0, 5, 0, 2}, {0, 4, 0, 6, 0, 4, 0, 6, 0}, {1, 0, 2, 0, 3, 0, 2, 0, 1}, {0, 3, 0, 4, 0, 1, 0, 4, 0}, {2, 0, 1, 0, 2, 0, 1, 0, 2}, {0, 1, 0, 2, 0, 1, 0, 2, 0}, {1, 2, 0, 2, 1, 2, 0, 2, 1}}, 12, 57, 58},
-            {7, {{1, 1, 0, 4, 3, 3, 4, 1, 4, 3},{3, 3, 5, 5, 3, 2, 5, 0, 3, 0},{1, 4, 2, 1, 4, 5, 1, 1, 3, 4},{0, 2, 1, 4, 3, 4, 4, 5, 4, 2},{3, 2, 2, 4, 2, 3, 0, 2, 3, 0},{1, 5, 5, 1, 1, 5, 5, 4, 0, 4},{5, 1, 4, 3, 2, 4, 5, 0, 5, 5},{1, 5, 1, 4, 2, 0, 1, 1, 4, 1},{2, 3, 3, 0, 4, 2, 4, 1, 5, 0},{2, 5, 4, 0, 0, 3, 1, 2, 1, 1}},16,140,141},
-            {8, {{4, 1, 2, 5, 2, 4, 5, 4, 4, 0},{1, 3, 1, 2, 1, 2, 3, 0, 2, 4},{0, 1, 5, 4, 3, 3, 0, 0, 2, 5},{3, 3, 4, 1, 5, 5, 5, 3, 0, 5},{2, 1, 2, 2, 1, 2, 0, 4, 1, 5},{4, 2, 1, 1, 1, 4, 4, 0, 4, 1},{4, 2, 2, 3, 1, 3, 2, 4, 3, 3},{1, 4, 2, 2, 2, 0, 5, 5, 4, 2},{4, 4, 5, 1, 0, 1, 3, 2, 1, 0},{3, 0, 4, 5, 3, 4, 1, 0, 2, 5}},16,93,94},
-            {9, {{3, 2, 4, 4, 1, 1, 1, 4, 2, 4},{1, 2, 1, 3, 1, 5, 1, 4, 4, 4},{5, 5, 0, 4, 0, 2, 3, 3, 1, 0},{5, 1, 5, 5, 4, 1, 1, 0, 2, 4},{1, 0, 3, 0, 2, 0, 3, 3, 3, 2},{4, 1, 1, 3, 0, 5, 1, 1, 1, 4},{0, 4, 2, 5, 5, 1, 3, 3, 1, 3},{4, 5, 1, 4, 4, 1, 1, 5, 2, 2},{5, 2, 2, 5, 2, 0, 0, 2, 5, 2},{2, 3, 3, 0, 4, 1, 2, 1, 0, 2}},20,215,211},
-            {10,{{1, 2, 3, 4, 5, 6, 7, 8, 9, 10},{2, 3, 4, 5, 6, 7, 8, 9, 10, 1},{3, 4, 5, 6, 7, 8, 9, 10, 1, 2},{4, 5, 6, 7, 8, 9, 10, 1, 2, 3},{5, 6, 7, 8, 9, 10, 1, 2, 3, 4},{6, 7, 8, 9, 10, 1, 2, 3, 4, 5},{7, 8, 9, 10, 1, 2, 3, 4, 5, 6},{8, 9, 10, 1, 2, 3, 4, 5, 6, 7},{9, 10, 1, 2, 3, 4, 5, 6, 7, 8},{10, 1, 2, 3, 4, 5, 6, 7, 8, 9}}, 20, 125, 126},
+            {1,
+                            {{0, 7, 0, 0, 4},
+                            {0, 0, 0, 4, 0},
+                            {1, 0, 0, 0, 0},
+                            {4, 4, 1, 0, 0},
+                            {6, 0, 3, 4, 4}},4,19,20,
 
+            },
+            {2,
+                            {{4, 0, 0, 10, 1},
+                            {1, 0, 0, 0, 0},
+                            {0, 0, 1, 6, 3},
+                            {0, 4, 0, 0, 2},
+                            {8, 0, 6, 3, 0}},4,21,22,
+
+            },
+            {3,
+                            {{0,8,0,4,5,10,0},
+                            {0,4,0,7,0,4,0},
+                            {0,2,4,2,0,0,2},
+                            {0,7,0,1,2,0,0},
+                            {2,4,0,0,3,0,2},
+                            {0,4,0,0,3,0,0},
+                            {2,0,0,0,0,0,0}},8,67,68,
+            },
+            {4,
+                            {{0,0,1,0,7,0,1},
+                            {0,1,4,0,0,0,4},
+                            {0,0,0,0,2,0,0},
+                            {3,1,0,8,5,7,7},
+                            {0,4,0,3,0,0,0},
+                            {0,0,0,3,2,4,2},
+                            {0,8,3,6,3,0,0}},8,59,60,
+            },
+            {5,
+                            {{6,7,2,0,0,0,0,0,0},
+                            {3,3,6,0,8,4,3,1,0},
+                            {0,0,8,0,0,0,2,4,0},
+                            {0,0,0,1,0,3,2,0,0},
+                            {0,0,0,7,4,0,1,0,0},
+                            {12,8,0,5,4,1,4,3,4},
+                            {8,0,1,2,4,3,3,0,0},
+                            {1,1,0,0,0,0,5,0,0},
+                            {4,0,0,0,4,6,0,13,2}},12,125,126,
+            },
+            {6,
+                            {{0,0,0,0,0,0,0,0,0},
+                            {4,0,8,4,0,0,0,0,0},
+                            {0,0,0,0,0,0,0,0,0},
+                            {0,0,0,0,3,0,0,1,0},
+                            {0,3,0,0,0,0,0,0,0},
+                            {0,0,0,1,1,0,0,3,0},
+                            {0,0,2,4,0,0,0,1,0},
+                            {0,2,0,0,8,0,4,3,10},
+                            {0,0,3,0,0,4,0,0,0}},12,57,58,
+            },
+            {7,
+                            {{0,0,0,0,0,3,0,0,0,0,0},
+                            {0,0,11,2,0,0,9,3,0,0,3},
+                            {0,0,0,3,1,0,2,0,0,0,0},
+                            {4,1,2,3,0,4,0,0,4,0,0},
+                            {5,0,0,0,4,0,1,0,4,3,0},
+                            {0,0,0,7,4,0,1,0,0,7,0},
+                            {0,8,0,0,0,0,3,0,1,0,3},
+                            {0,3,0,0,5,2,3,0,0,0,2},
+                            {0,0,0,3,1,0,2,8,0,0,0},
+                            {0,3,4,0,7,0,0,7,0,0,0},
+                            {4,2,0,4,0,3,0,0,5,7,0}},16,140,142,
+            },
+            {8,
+                            {{1,0,0,0,0,0,0,0,0,0,0},
+                            {0,0,0,0,0,0,0,0,0,0,0},
+                            {0,0,10,10,0,0,0,4,5,0,0},
+                            {0,4,1,0,8,0,0,0,0,0,5},
+                            {8,0,0,0,0,0,6,0,0,0,0},
+                            {0,0,0,0,13,0,0,0,2,0,3},
+                            {0,0,0,0,4,0,0,0,0,1,0},
+                            {0,0,0,0,0,0,0,0,0,0,0},
+                            {0,0,4,0,0,0,0,3,0,0,0},
+                            {4,1,0,0,0,0,0,0,0,0,0},
+                            {0,0,0,0,0,0,0,0,0,0,0}},16,93,94,
+            },
+            {9,
+                            {{2,4,0,0,6,7,3,4,0,0,3,0,1},
+                            {0,0,2,0,3,0,0,6,0,0,8,11,3},
+                            {0,3,0,8,0,0,2,0,0,0,0,0,4},
+                            {2,0,0,0,0,0,0,0,0,3,2,0,0},
+                            {0,6,0,8,0,3,0,0,0,0,0,0,1},
+                            {0,3,0,2,0,0,9,0,0,0,0,5,6},
+                            {1,9,4,0,0,2,4,0,0,0,3,2,0},
+                            {2,3,0,4,0,0,0,6,2,0,1,0,3},
+                            {0,0,0,0,0,6,0,0,0,2,2,0,8},
+                            {7,2,4,2,0,0,6,4,1,0,0,0,7},
+                            {0,0,0,11,0,0,0,0,3,4,0,9,0},
+                            {0,0,0,0,1,4,3,4,0,0,0,3,11},
+                            {0,0,4,7,7,0,0,2,0,2,5,0,1}},20,211,212,
+            },
+            {10,
+                            {{0,0,1,4,0,0,9,0,0,0,12,0,1},
+                            {0,0,0,0,0,0,0,0,0,1,0,0,0},
+                            {1,0,0,0,0,0,2,0,0,2,0,0,0},
+                            {0,0,0,0,0,9,4,0,0,0,6,0,0},
+                            {0,6,9,0,0,0,0,0,0,0,0,0,0},
+                            {0,0,0,0,0,0,0,1,6,10,0,1,4},
+                            {0,3,0,0,0,1,0,0,0,0,0,2,0},
+                            {0,0,0,1,3,0,0,0,0,9,0,0,0},
+                            {9,0,0,3,3,0,0,0,0,3,4,0,0},
+                            {0,1,4,0,0,0,0,0,0,5,0,1,0},
+                            {0,0,0,0,0,0,0,0,0,0,0,0,0},
+                            {2,0,0,0,0,3,3,0,0,0,0,0,10},
+                            {0,0,0,0,0,0,0,0,0,4,0,0,0}},20,125,126,
+            },
     };
+
+    // Estrutura para armazenar os resultados de cada instância para a tabela
+    struct Resultado {
+        int id;
+        string estado;
+        int familias_protegidas;
+        int custo;
+        int moedas_restantes;
+        int num_deputados;
+        int delegacias_colocadas;
+    };
+
+    vector<Resultado> resultados;
+
 
     for (const auto& instancia: instances) {
         auto& [instancia_id, map, budget, min_familiasA, min_familiasB] = instancia;
         instancias(instancia_id, map, budget, min_familiasA, min_familiasB);
-        cout << "Verba disponível: " << budget << " moedas de ouro" << endl;
-        cout << "----------------------------------------" << endl; // Linha de separação entre as instâncias
+
+    }
+
+    // Após processar todas as instâncias, imprimir os resultados em forma de tabela
+    cout << left << setw(10) << "ID" << setw(20) << "Estado" << setw(20) << "Famílias Prot." << setw(15) << "Custo" << setw(20) << "Moedas Restantes" << setw(20) << "Deputados" << "Delegacias\n";
+    cout << string(105, '-') << '\n';
+
+    for (const auto& res : resultados) {
+        cout << left << setw(10) << res.id << setw(20) << res.estado << setw(20) << res.familias_protegidas << setw(15) << res.custo << setw(20) << res.moedas_restantes << setw(20) << res.num_deputados << res.delegacias_colocadas << '\n';
     }
 
     return 0;
 }
-
-
-// Created by Vitor Frango on 06/04/2024.
