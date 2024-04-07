@@ -32,6 +32,16 @@ struct Comparador {
     }
 };
 
+int raio_protecao(int deputados) {
+    switch (deputados) {
+        case 0: return 1;
+        case 1: return 2;
+        case 5: return 3;
+        case 13: return 4;
+        default: return 0;
+    }
+}
+
 const Instancia instancias[NUM_INSTANCIAS] = {
         {5, 5, 4, 19, 20},
         {5, 5, 4, 21, 22},
@@ -211,18 +221,21 @@ public:
         }
     }
 
-    int calcularFamiliasProtegidas(const Estado& estado) {
-        int raio = calcularRaio(estado.deputados);
-        int familiasProtegidas = 0;
-        for (int i = std::max(0, estado.x - raio); i <= std::min(estado.x + raio, instancia.N - 1); i++) {
-            for (int j = std::max(0, estado.y - raio); j <= std::min(estado.y + raio, instancia.M - 1); j++) {
-                familiasProtegidas += mapa[i][j];
+    int calcular_familas_protegidas(const std::vector<std::vector<int>>& mapa, const Estado& estado) {
+        int protegidas = 0;
+        std::vector<std::vector<bool>> protegida(mapa.size(), std::vector<bool>(mapa[0].size(), false));
+
+        for (int i = 0; i < estado.x; i++) {
+            for (int j = 0; j < estado.y; j++) {
+                int deputados = estado.deputados; // Adaptar conforme a estrutura Estado
+                int raio = raio_protecao(deputados);
+
             }
         }
-        return familiasProtegidas;
+        return protegidas;
     }
 
-    std::vector<Estado> gerarSucessores(const Estado& estado) {
+    std::vector<Estado> gerar_successores(const Estado& estado_atual, const std::vector<std::vector<int>>& mapa, int orcamento) {
         std::vector<Estado> sucessores;
         // Ajuste na lógica conforme necessário para adicionar os sucessores corretamente
         for (int x = 0; x < instancia.N; x++) {
@@ -230,6 +243,7 @@ public:
                 for (int deputados = 0; deputados <= instancia.Verba; deputados++) {
                     int custo = 4 + deputados; // Assumindo 4 como custo base + deputados
                     if (custo <= instancia.Verba) {
+                        int estado;
                         Estado novoEstado = estado;
                         novoEstado.x = x;
                         novoEstado.y = y;
