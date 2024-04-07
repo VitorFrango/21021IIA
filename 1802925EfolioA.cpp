@@ -1,7 +1,10 @@
 /*
 // Created by Vitor Frango on 06/04/2024.
 
- O código apresentado implementa um algoritmo de busca de custo uniforme. A busca de custo uniforme é um algoritmo de busca que expande o nó de menor custo, garantindo que o primeiro nó a atingir o objetivo seja o de menor custo.
+ O código implementa um algoritmo de busca de custo uniforme. Esse algoritmo expande, no espaço de busca,
+ o nó de menor custo de caminho desde a origem, o que garante que o primeiro nó a atingir o objetivo seja
+ o de caminho mais curto (ou de menor custo), caso exista um caminho até o objetivo. É um algoritmo completo
+ e otimizado
 */
 
 
@@ -165,7 +168,6 @@ void instancias(int instancia_id, const vector<vector<int>>& map, int budget, in
         while (!pq.empty()) {
             auto current_duration = duration_cast<milliseconds>(high_resolution_clock::now() - start);
             if (current_duration.count() > 59590) { // Verifica o limite de tempo de 59.59 segundos
-
                 break;
             }
 
@@ -198,7 +200,7 @@ void instancias(int instancia_id, const vector<vector<int>>& map, int budget, in
 
         if (solution_found) {
             cout << "Resultado: Solução encontrada." << endl;
-        } else if (duration.count() >= 60000) {
+        } else if (duration.count() > 59590) {  // Verifica o limite de tempo de 59.59 segundos
             cout << "Resultado: Não resolvido (tempo excedido)." << endl;
         } else {
             cout << "Resultado: Impossível." << endl;
