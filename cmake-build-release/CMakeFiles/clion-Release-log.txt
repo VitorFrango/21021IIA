@@ -1,0 +1,5 @@
+/Users/vitorfrango/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++ -G Xcode -S /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA -B /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release
+-- Found SFML 2.6.1 in /usr/local/lib/cmake/SFML
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release

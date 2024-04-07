@@ -1,0 +1,5 @@
+/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-debug/CMakeFiles/21071IIA.dir
+/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-debug/CMakeFiles/21071IIA_SFML.dir
+/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-debug/CMakeFiles/21071IIA_SFML_xerifes.dir
+/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-debug/CMakeFiles/rebuild_cache.dir

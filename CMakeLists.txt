@@ -27,7 +27,7 @@ add_executable(21071IIA
         DiogoAlgoritmos/TRand.cpp
         DiogoAlgoritmos/TRand.h
         DiogoAlgoritmos/TVector.h
-        1802925EFolioA.cpp
+        1802925EFolioA_old.cpp
         JogoDoGalo.cpp
         JogoDoGalo.h
         OitoDamas.cpp
@@ -48,7 +48,10 @@ add_executable(21071IIA
         TRand.cpp
         TRand.h
         TVector.h
-        xerifes.cpp)
+        xerifes.cpp
+        1802925EfolioA.cpp
+        ../../../../../../../Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h
+        ../../../../../../../Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h)
 
 cmake_minimum_required(VERSION 3.10)
 project(21071IIA)
@@ -58,10 +61,12 @@ set(CMAKE_CXX_STANDARD 17)
 find_package(SFML 2.5 COMPONENTS graphics audio window system REQUIRED)
 
 # Adiciona o executável do seu projeto
-add_executable(21071IIA_SFML 1802925EFolioA.cpp  )
+add_executable(21071IIA_SFML 1802925EFolioA_old.cpp
+        ../../../../../../../Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h)
 
 # Vincula seu executável com as bibliotecas da SFML
 target_link_libraries(21071IIA_SFML sfml-graphics sfml-audio sfml-window sfml-system)
 
 # Adiciona o executável do seu projeto
-add_executable(21071IIA_SFML_xerifes xerifes.cpp  )
+add_executable(21071IIA_SFML_xerifes xerifes.cpp
+        ../../../../../../../Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h)
