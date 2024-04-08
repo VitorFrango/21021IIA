@@ -1,7 +1,9 @@
 /*
 // Created by Vitor Frango on 06/04/2024.
 
- O código apresentado implementa um algoritmo de busca de custo uniforme. A busca de custo uniforme é um algoritmo de busca que expande o nó de menor custo, garantindo que o primeiro nó a atingir o objetivo seja o de menor custo.
+ O código apresentado implementa um algoritmo de busca de custo uniforme. A busca de custo uniforme é um
+ algoritmo de busca que expande o nó de menor custo, garantindo que o primeiro nó a atingir o objetivo
+ seja o de menor custo.
 */
 
 
