@@ -7,55 +7,46 @@
  e otimizado
 */
 
-
 #include <iostream>
-#include <vector>  // utilizado para armazenar o mapa
-#include <tuple>  // utilizado para criar tuplas para armazenar as coordenadas e o numero de deputados
-#include <queue>  // utilizado para a fila de prioridade para os estados
-#include <iomanip> // utilizado para formatar a saída
-#include <numeric>  // utilizado para somar os deputados
-#include <chrono>  // utilizado para medir o tempo
+#include <vector>
+#include <tuple>
+#include <queue>
+#include <iomanip>
+#include <numeric>
+#include <chrono>
 
 using namespace std;
 
-
-// função para calcular o raio de proteção, baseado no número de deputados
 int raio_protecao(int deputados) {
-    // O raio de proteção é calculado com base no número de deputados
     switch (deputados) {
-        case 0: return 1;   // 3x3 zones
-        case 1: return 2;   // 5x5 zones
-        case 5: return 3;   // 7x7 zones
-        case 13: return 4;  // 9x9 zones
+        case 0: return 1;
+        case 1: return 2;
+        case 5: return 3;
+        case 13: return 4;
         default: return 0;
     }
 }
 
-// Estrutura para armazenar o estado atual
 struct Estado {
     vector<tuple<int, int, int>> delegacoes;
     int cost;
     int familas_protegidas;
 
-    // construtor para inicializar o estado
     Estado(vector<tuple<int, int, int>> delegacoes = {}, int cost = 0, int familas_protegidas = 0)
             : delegacoes(delegacoes), cost(cost), familas_protegidas(familas_protegidas) {}
 
-    // operador para comparar os estados com base no custo, necessário para a fila de prioridade
     bool operator>(const Estado& other) const {
         return cost > other.cost;
     }
 };
 
-// função para calcular o número de famílias protegidas com base no mapa e no estado atual
-int calcular_familas_protegidas(const vector<vector<int>>& map, const Estado& Estado) {
+int calcular_familas_protegidas(const vector<vector<int>>& map, const Estado& estado) {
     int familas_protegidas = 0;
-    // matriz para marcar as zonas protegidas pelos delegados
     vector<vector<bool>> protegida_por_delegados(map.size(), vector<bool>(map[0].size(), false));
 
-    for (const auto& Delegacao : Estado.delegacoes) {
+    for (const auto& delegacao : estado.delegacoes) {
         int x, y, deputados;
-        tie(x, y, deputados) = Delegacao;
+        tie(x, y, deputados) = delegacao;
         int radius = raio_protecao(deputados);
 
         for (int i = max(0, x - radius); i <= min(static_cast<int>(map.size()) - 1, x + radius); ++i) {
@@ -70,23 +61,38 @@ int calcular_familas_protegidas(const vector<vector<int>>& map, const Estado& Es
     return familas_protegidas;
 }
 
-// função para gerar os sucessores do estado atual a partir do estado atual, do mapa e do orçamento
 vector<Estado> gerar_successores(const Estado& currente_Estado, const vector<vector<int>>& map, int budget) {
-    vector<Estado> successores; // vetor para armazenar os sucessores
+    vector<Estado> successores;
     vector<int> deputados_permitidos = {0, 1, 5, 13};
 
-    for (int deputados : deputados_permitidos) { // 0, 1, 5, 13
-        int custo_da_delegacao = 4 + deputados; // 4 para a delegação e 1 para cada deputado
-        if (currente_Estado.cost + custo_da_delegacao <= budget) {
-            for (size_t i = 0; i < map.size(); ++i) {
-                for (size_t j = 0; j < map[i].size(); ++j) {
-                    Estado novo_Estado = currente_Estado;  // cria um novo estado com a delegação adicional
-                    novo_Estado.delegacoes.emplace_back(i, j, deputados); // adiciona a delegação
-                    novo_Estado.cost += custo_da_delegacao; // atualiza o custo
-                    novo_Estado.familas_protegidas = calcular_familas_protegidas(map, novo_Estado);
-                    if (novo_Estado.familas_protegidas >= currente_Estado.familas_protegidas) {
-                        successores.push_back(novo_Estado);
+    for (int deputados : deputados_permitidos) {
+        int custo_da_delegacao = 4 + deputados;
+
+        if (currente_Estado.cost + custo_da_delegacao > budget) continue;
+
+        for (size_t i = 0; i < map.size(); ++i) {
+            for (size_t j = 0; j < map[i].size(); ++j) {
+                bool isProtegida = false;
+                for (const auto& delegacao : currente_Estado.delegacoes) {
+                    int x, y, deps;
+                    tie(x, y, deps) = delegacao;
+                    int radius = raio_protecao(deps);
+                    if (i >= x - radius && i <= x + radius && j >= y - radius && j <= y + radius) {
+                        isProtegida = true;
+                        break;
                     }
+                }
+
+                if (isProtegida) continue;
+
+                Estado novo_Estado = currente_Estado;
+                novo_Estado.delegacoes.emplace_back(i, j, deputados);
+                novo_Estado.cost += custo_da_delegacao;
+                int familas_protegidas_apos_adicao = calcular_familas_protegidas(map, novo_Estado);
+
+                if (familas_protegidas_apos_adicao > currente_Estado.familas_protegidas) {
+                    novo_Estado.familas_protegidas = familas_protegidas_apos_adicao;
+                    successores.push_back(novo_Estado);
                 }
             }
         }
@@ -121,7 +127,7 @@ void imprime_mapa(const vector<vector<int>>& map, const Estado& Estado, int budg
             if (!isDelegacao) {
                 cout << setw(2) << map[i][j]; // mostrar o numero de familias
                 if (isProtegida) {
-                    cout << "\033[1;31mX\033[0m"; // adiciona "X" vermelho se Protegida; // adiciona "x" se Protegida
+                    cout << "\033[1;31mX\033[0m"; // adiciona "X" vermelho se Protegida;
                 } else {
                     cout << " "; // mantem "  " se nao Protegida
                 }
@@ -146,13 +152,13 @@ void imprime_mapa(const vector<vector<int>>& map, const Estado& Estado, int budg
 
  // Função para processar as instâncias do problema tentando encontrar uma solução dentro do tempo limite
 void instancias(int instancia_id, const vector<vector<int>>& map, int budget, int min_familiasA, int min_familiasB) {
-    using namespace std::chrono;
-    auto start = high_resolution_clock::now();
+     using namespace std::chrono;
+     auto start = high_resolution_clock::now();
 
     cout << "----------------------------------------" << endl; // Linha de separação entre as instâncias
     cout << "Processando a instância ID: " << instancia_id << endl;
     cout << "Verba disponível: " << budget << " moedas de ouro" << endl;
-    cout << " D -> Delegado colocado \n X -> Família protegida\n";
+    cout << " D -> Delegacias \n X -> Família protegida\n";
     cout << "----------------------------------------" << endl; // Linha de separação entre as instâncias
 
     // Estrutura para armazenar o último estado para exibição
@@ -168,7 +174,7 @@ void instancias(int instancia_id, const vector<vector<int>>& map, int budget, in
 
         while (!pq.empty()) {
             auto current_duration = duration_cast<milliseconds>(high_resolution_clock::now() - start);
-            if (current_duration.count() > 59590) { // Verifica o limite de tempo de 59.59 segundos
+            if (current_duration.count() > 60000000) { // Verifica o limite de tempo de 60 segundos
                 break;
             }
 
@@ -197,11 +203,11 @@ void instancias(int instancia_id, const vector<vector<int>>& map, int budget, in
 
         // Calcula o tempo gasto
         auto stop = high_resolution_clock::now();
-        auto duration = duration_cast<milliseconds>(stop - start);
+        auto duration = duration_cast<microseconds>(stop - start);
 
         if (solution_found) {
             cout << "Resultado: Solução encontrada." << endl;
-        } else if (duration.count() > 59590) {  // Verifica o limite de tempo de 59.59 segundos
+        } else if (duration.count() > 60000000) {  // Verifica o limite de tempo de 59.59 segundos
             cout << "Resultado: Não resolvido (tempo excedido)." << endl;
         } else {
             cout << "Resultado: Impossível." << endl;
@@ -209,7 +215,7 @@ void instancias(int instancia_id, const vector<vector<int>>& map, int budget, in
 
         cout << "Número de expansões: " << num_expansoes << endl;
         cout << "Número de gerações: " << num_geracoes << endl;
-        cout << "Tempo gasto: " << duration.count() / 1000.00 << " segundos." << endl;
+        std::cout << "Tempo gasto: " << std::fixed << std::setprecision(5) << duration.count() / 1000000.0 << " segundos." << std::endl;//std::cout << "Tempo gasto: " << std::fixed << std::setprecision(2) << duration.count() / 10000 << " segundos." << std::endl;
         cout << "----------------------------------------" << endl;
     }
 }
