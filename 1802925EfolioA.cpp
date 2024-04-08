@@ -203,11 +203,12 @@ void instancias(int instancia_id, const vector<vector<int>>& map, int budget, in
 
         // Calcula o tempo gasto
         auto stop = high_resolution_clock::now();
+        // para calcular o tempo gasto nas primeiras instâncias tive de recorer a outra unidades de tempo
         auto duration = duration_cast<microseconds>(stop - start);
 
         if (solution_found) {
             cout << "Resultado: Solução encontrada." << endl;
-        } else if (duration.count() > 60000000) {  // Verifica o limite de tempo de 59.59 segundos
+        } else if (duration.count() > 60000000) {  // Verifica o limite de tempo de60 segundos
             cout << "Resultado: Não resolvido (tempo excedido)." << endl;
         } else {
             cout << "Resultado: Impossível." << endl;
@@ -215,7 +216,7 @@ void instancias(int instancia_id, const vector<vector<int>>& map, int budget, in
 
         cout << "Número de expansões: " << num_expansoes << endl;
         cout << "Número de gerações: " << num_geracoes << endl;
-        std::cout << "Tempo gasto: " << std::fixed << std::setprecision(5) << duration.count() / 1000000.0 << " segundos." << std::endl;//std::cout << "Tempo gasto: " << std::fixed << std::setprecision(2) << duration.count() / 10000 << " segundos." << std::endl;
+        std::cout << "Tempo gasto: " << std::fixed << std::setprecision(5) << duration.count() / 1000000.0 << " segundos." << std::endl;
         cout << "----------------------------------------" << endl;
     }
 }

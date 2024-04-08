@@ -58,7 +58,6 @@ int calcular_familas_protegidas(const vector<vector<int>>& map, const Estado& Es
         tie(x, y, deputados) = Delegacao;
         int radius = raio_protecao(deputados);
 
-        // percorre a zona protegida pelos delegados e soma o número de famílias protegidas
         for (int i = max(0, x - radius); i <= min(static_cast<int>(map.size()) - 1, x + radius); ++i) {
             for (int j = max(0, y - radius); j <= min(static_cast<int>(map[0].size()) - 1, y + radius); ++j) {
                 if (!protegida_por_delegados[i][j]) {
@@ -122,7 +121,7 @@ void imprime_mapa(const vector<vector<int>>& map, const Estado& Estado, int budg
             if (!isDelegacao) {
                 cout << setw(2) << map[i][j]; // mostrar o numero de familias
                 if (isProtegida) {
-                    cout << "\033[1;31mX\033[0m"; // adiciona "X" vermelho se Protegida;
+                    cout << "\033[1;31mX\033[0m"; // adiciona "X" vermelho se Protegida; // adiciona "x" se Protegida
                 } else {
                     cout << " "; // mantem "  " se nao Protegida
                 }
@@ -153,7 +152,7 @@ void instancias(int instancia_id, const vector<vector<int>>& map, int budget, in
     cout << "----------------------------------------" << endl; // Linha de separação entre as instâncias
     cout << "Processando a instância ID: " << instancia_id << endl;
     cout << "Verba disponível: " << budget << " moedas de ouro" << endl;
-    cout << " D -> Delegacias \n X -> Família protegida\n";
+    cout << " D -> Delegado colocado \n X -> Família protegida\n";
     cout << "----------------------------------------" << endl; // Linha de separação entre as instâncias
 
     // Estrutura para armazenar o último estado para exibição
@@ -199,8 +198,6 @@ void instancias(int instancia_id, const vector<vector<int>>& map, int budget, in
         // Calcula o tempo gasto
         auto stop = high_resolution_clock::now();
         auto duration = duration_cast<milliseconds>(stop - start);
-
-
 
         if (solution_found) {
             cout << "Resultado: Solução encontrada." << endl;
