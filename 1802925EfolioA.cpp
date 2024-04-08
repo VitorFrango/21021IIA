@@ -138,7 +138,8 @@ void imprime_mapa(const vector<vector<int>>& map, const Estado& Estado, int budg
     int moedas_restantes = budget - Estado.cost;
     cout << "Moedas restantes: " << moedas_restantes << " moedas de ouro" << endl;
     int num_deputados = accumulate(begin(Estado.delegacoes), end(Estado.delegacoes), 0,
-                                  [](int acc, const tuple<int, int, int>& Delegacao) { return acc + get<2>(Delegacao); });
+                                  [](int acc, const tuple<int, int, int>& Delegacao) {
+        return acc + get<2>(Delegacao); });
     cout << "Número de deputados: " << num_deputados << endl;
     cout << "Número de delegacias colocadas: " << Estado.delegacoes.size() << endl;
 }
@@ -346,7 +347,8 @@ int main() {
     vector<Resultado> resultados;
 
     for (const auto& instancia: instances) {
-        auto& [instancia_id, map, budget, min_familiasA, min_familiasB] = instancia;
+        auto& [instancia_id, map, budget, min_familiasA,
+               min_familiasB] = instancia;
         instancias(instancia_id, map, budget, min_familiasA, min_familiasB);
 
     }

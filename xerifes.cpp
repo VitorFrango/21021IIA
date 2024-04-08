@@ -206,7 +206,7 @@ public:
                 return;
             }
 
-            auto sucessores = gerarSucessores(atual);
+            auto sucessores = gerar_sucessores(atual);
             for (auto& sucessor : sucessores) {
                 fila.push(sucessor);
             }
@@ -235,6 +235,8 @@ public:
         return protegidas;
     }
 
+
+
     std::vector<Estado> gerar_successores(const Estado& estado_atual, const std::vector<std::vector<int>>& mapa, int orcamento) {
         std::vector<Estado> sucessores;
         // Ajuste na lógica conforme necessário para adicionar os sucessores corretamente
@@ -249,7 +251,7 @@ public:
                         novoEstado.y = y;
                         novoEstado.deputados = deputados;
                         novoEstado.custo += custo;
-                        novoEstado.familiasProtegidas = calcularFamiliasProtegidas(novoEstado);
+                        novoEstado.familiasProtegidas = calcular_familas_protegidas(novoEstado);
                         novoEstado.geracao = estado.geracao + 1;
                         sucessores.push_back(novoEstado);
                     }

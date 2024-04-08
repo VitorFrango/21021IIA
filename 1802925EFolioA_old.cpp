@@ -201,6 +201,7 @@ void instancias(int instancia_id, const vector<vector<int>>& map, int budget, in
             cout << "Resultado: Impossível." << endl;
         }
 
+
         cout << "Número de expansões: " << num_expansoes << endl;
         cout << "Número de gerações: " << num_geracoes << endl;
         cout << "Tempo gasto: " << duration.count() / 1000.00 << " segundos." << endl;
