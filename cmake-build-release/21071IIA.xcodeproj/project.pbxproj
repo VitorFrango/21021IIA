@@ -9,7 +9,7 @@
 /* Begin PBXAggregateTarget section */
 		102D674866AB4378AEC9796B /* ZERO_CHECK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 950FBAA0740C4E0098663A68 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildConfigurationList = 8A3A379F73DF41AFBE1B704B /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
 			buildPhases = (
 				78EA1D70D6C4294FE2FA94AB /* Generate CMakeFiles/ZERO_CHECK */,
 			);
@@ -20,15 +20,15 @@
 		};
 		3F6CD77B2DD541A1991DA5E7 /* ALL_BUILD */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 4EA74F5A609F4F6297A6E67D /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildConfigurationList = F9729D76893941D8B83C1C43 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
 			buildPhases = (
 				4310AD28282BF144DA93B33F /* Generate CMakeFiles/ALL_BUILD */,
 			);
 			dependencies = (
-				9EA299361E7E433C81AED5BF /* PBXTargetDependency */,
-				0A772E4F26C149EEB006AA28 /* PBXTargetDependency */,
-				ECEB8A5A80084999A5BBA9D7 /* PBXTargetDependency */,
-				689E06F4DD5841D7B372B6BA /* PBXTargetDependency */,
+				2307DD377CD94F1C810E84D3 /* PBXTargetDependency */,
+				9D2EB3AC7C094657985234BD /* PBXTargetDependency */,
+				A025A97B497B441698A8D233 /* PBXTargetDependency */,
+				A8BC72A09E2E4EC59072122B /* PBXTargetDependency */,
 			);
 			name = ALL_BUILD;
 			productName = ALL_BUILD;
@@ -36,134 +36,135 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		03CCD75618A14C919E01E707 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraAdversa.cpp */ = {isa = PBXBuildFile; fileRef = CF2B825BBC0F43E99E115242 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraAdversa.cpp */; };
-		09D097E14E1747DEB27CABB3 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/1802925EFolioA_old.cpp */ = {isa = PBXBuildFile; fileRef = 2E64F38FBD5B4CC18194865F /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/1802925EFolioA_old.cpp */; };
-		11712E9A2A9C42FD8ED7DA95 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/xerifes.cpp */ = {isa = PBXBuildFile; fileRef = 86653AD62E334DEDA45C5FF9 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/xerifes.cpp */; };
-		1302C0870631450885816496 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 6229A35DB05A402EB0BAE3F5 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/CMakeLists.txt */; };
-		153764F8D70E460FBAC07778 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraConstrutiva.cpp */ = {isa = PBXBuildFile; fileRef = 4317808F5A1C4EC296CC4236 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraConstrutiva.cpp */; };
-		19EFE9C1EBB24923948C00E2 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraConstrutivaComCiclos.cpp */ = {isa = PBXBuildFile; fileRef = 2A9C360511E94EE3BD1983F0 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraConstrutivaComCiclos.cpp */; };
-		1F6BCDB2A28247619DD6263F /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraConstrutiva.cpp */ = {isa = PBXBuildFile; fileRef = 62B7A07DCAF44DABBD91903A /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraConstrutiva.cpp */; };
-		201A4FEFAE6D46808B47C178 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraMelhorativa.h */ = {isa = PBXBuildFile; fileRef = 22EE3607CFF3439AB180D956 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraMelhorativa.h */; };
-		207A0516259143139FBE0F19 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/Puzzle8.cpp */ = {isa = PBXBuildFile; fileRef = E9D441B8B8E94A6983B76559 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/Puzzle8.cpp */; };
-		22D7579AEA2E4A3CB834E177 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraConstrutiva.h */ = {isa = PBXBuildFile; fileRef = 7E085C5A0FCF4BACBC8BBA30 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraConstrutiva.h */; };
-		244EE6CF0FAE435CBD8142F1 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/1802925EfolioA.cpp */ = {isa = PBXBuildFile; fileRef = 696AFEAD4A204EDFA51C01B1 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/1802925EfolioA.cpp */; };
-		2833DFD729504618A24EAFAF /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/Particao.h */ = {isa = PBXBuildFile; fileRef = FEF05A72B38B4D73BDD43AEC /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/Particao.h */; };
-		2B4EE7A9C1B64713BA270613 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraConstrutivaComCiclos.cpp */ = {isa = PBXBuildFile; fileRef = 13441017CED74B3784D71804 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraConstrutivaComCiclos.cpp */; };
-		318015DA55C041E685042B11 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraConstrutivaComCiclos.h */ = {isa = PBXBuildFile; fileRef = 1B83B7534A474C96A8DF6E67 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraConstrutivaComCiclos.h */; };
-		319867474A9040B3B9252900 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/Puzzle8.cpp */ = {isa = PBXBuildFile; fileRef = 6E08F4AC2BB54A0CB048C591 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/Puzzle8.cpp */; };
-		37CC3277064E4B24BC614F2C /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TVector.h */ = {isa = PBXBuildFile; fileRef = D456A747064F4FDBB317383E /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TVector.h */; };
-		404F9F3BB36B4436A63940E2 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/Puzzle8.h */ = {isa = PBXBuildFile; fileRef = 5FF462A0AB2945F5B2D392AE /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/Puzzle8.h */; };
-		4C6090C72FBC4F819D594467 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TVector.h */ = {isa = PBXBuildFile; fileRef = F3F8EFC1AA0542C9BCF4ADE0 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TVector.h */; };
-		50718282450E433AB1EAB4D0 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h */ = {isa = PBXBuildFile; fileRef = 8820597970474281AAC161A9 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h */; };
-		5A467E7620544A88A88EF779 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/JogoDoGalo.cpp */ = {isa = PBXBuildFile; fileRef = E82F6DADBAA344FBB66409F8 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/JogoDoGalo.cpp */; };
-		5A7BC8C061E0472597A57FA2 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TRand.h */ = {isa = PBXBuildFile; fileRef = 606462AA64504589BE2A92D0 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TRand.h */; };
-		68617C4592C64F8CA139F0CA /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/ProcuraEngine.cpp */ = {isa = PBXBuildFile; fileRef = 9B8C37CDE52C4EDAA022304B /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/ProcuraEngine.cpp */; };
-		70BF0B4375014CE09E1BE323 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/JogoDoGalo.h */ = {isa = PBXBuildFile; fileRef = 9F479060588E4B298A562A59 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/JogoDoGalo.h */; };
-		717E2616213547D6A5806F55 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/Particao.h */ = {isa = PBXBuildFile; fileRef = 183E086CD9F143F2AD75723F /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/Particao.h */; };
-		7BEF3E17EAB54588B1529A14 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/xerifes.cpp */ = {isa = PBXBuildFile; fileRef = 67BE9C64BEF741ECA860FEC7 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/xerifes.cpp */; };
-		7E9F8C4FBCE74A89BEBE1776 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraConstrutiva.h */ = {isa = PBXBuildFile; fileRef = 01207B9FFECE49BCAA718CDE /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraConstrutiva.h */; };
-		987FA0EB36EE43B98F1F4C5C /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraMelhorativa.h */ = {isa = PBXBuildFile; fileRef = 97E30FB1D81A4F40B54D6A1A /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraMelhorativa.h */; };
-		9B891358EAD94903A065ECC8 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/OitoDamas.cpp */ = {isa = PBXBuildFile; fileRef = 8218C2C5B70345DAAFF6F0F2 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/OitoDamas.cpp */; };
-		9DD4636618C44836834CFBAE /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/OitoDamas.h */ = {isa = PBXBuildFile; fileRef = 0CF1418C869F40F18C73782D /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/OitoDamas.h */; };
-		A5D1DCA36E014F45BF7E4007 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = E33A3F56708D4B3A9084323D /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/CMakeLists.txt */; };
-		A968824B983A42A4BEE9CE73 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/Particao.cpp */ = {isa = PBXBuildFile; fileRef = 06E808BB84A84ED5A60DB802 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/Particao.cpp */; };
-		B574F95A205C4B75929B556A /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h */ = {isa = PBXBuildFile; fileRef = 83ADDADBD8204B7D8AC21081 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h */; };
-		BB4A809CCCBA429481028B2C /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraAdversa.h */ = {isa = PBXBuildFile; fileRef = 9C0AF4D9B28344558C6E3C65 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraAdversa.h */; };
-		BE965D2E93CD4BFD8900A4B8 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraAdversa.h */ = {isa = PBXBuildFile; fileRef = 199E99B3A6504ACE864A3CE8 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraAdversa.h */; };
-		C395144DA25E489CB2B39CF4 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TRand.cpp */ = {isa = PBXBuildFile; fileRef = 71D6D769E27C4F54B228D8D0 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TRand.cpp */; };
-		C3A98CC859EE406E86F69C06 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TRand.h */ = {isa = PBXBuildFile; fileRef = 10C513ED87CF49D79BB21456 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TRand.h */; };
-		C47146200FFA4098835E2008 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraMelhorativa.cpp */ = {isa = PBXBuildFile; fileRef = 74361DF440AE493E94A19B47 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraMelhorativa.cpp */; };
-		C6AA499D7B274FA29820A3CC /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraMelhorativa.cpp */ = {isa = PBXBuildFile; fileRef = C169715F2F854DDBA37B78FB /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraMelhorativa.cpp */; };
-		C9ABA2D825974593B635B95F /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/1802925EFolioA_old.cpp */ = {isa = PBXBuildFile; fileRef = C5F61647AB43451292A63C4A /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/1802925EFolioA_old.cpp */; };
-		CE10BD78862E49D0B8516864 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraAdversa.cpp */ = {isa = PBXBuildFile; fileRef = 342494B58F24479A9BFC90CD /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraAdversa.cpp */; };
-		D2068A301F714A28AF5B1B59 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/OitoDamas.h */ = {isa = PBXBuildFile; fileRef = 82B5E595FDFE4360939A35ED /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/OitoDamas.h */; };
-		D5912FCD4A08419CA08A405A /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 296D3264CD6F4C94ACAF3D28 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/CMakeLists.txt */; };
-		DB6397167187469AA5F30F75 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraConstrutivaComCiclos.h */ = {isa = PBXBuildFile; fileRef = B59D5DBF4DE5480E98E7ECEE /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraConstrutivaComCiclos.h */; };
-		E85BFD758E154CAAB5FDEF49 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/Puzzle8.h */ = {isa = PBXBuildFile; fileRef = 16E8CC74283B4DF797FD68FC /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/Puzzle8.h */; };
-		E928D0FBC9C745368F9E4FCD /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/JogoDoGalo.h */ = {isa = PBXBuildFile; fileRef = 291AAF4230954A5B94AC3F59 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/JogoDoGalo.h */; };
-		EB8DA53089D54FDD850B70AA /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TRand.cpp */ = {isa = PBXBuildFile; fileRef = EDED114287EC406CB3C9B25B /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TRand.cpp */; };
-		F09CA88700FC4623B2ECF529 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/OitoDamas.cpp */ = {isa = PBXBuildFile; fileRef = 98BD491D0F04445C9B20CFB3 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/OitoDamas.cpp */; };
-		F5281BED7A4945199FEB5567 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h */ = {isa = PBXBuildFile; fileRef = 1D23EA6960E74C2BAC848796 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h */; };
-		F71E5416DC794C71AC25AE4A /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/JogoDoGalo.cpp */ = {isa = PBXBuildFile; fileRef = 6773C866239C4A0781913FFB /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/JogoDoGalo.cpp */; };
-		FA22B8540B134B2E94F28BBA /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/ProcuraEngine.cpp */ = {isa = PBXBuildFile; fileRef = 89898F8EEEBA41DBB71BECD4 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/ProcuraEngine.cpp */; };
-		FE4043F34E004E47AC021BD9 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/Particao.cpp */ = {isa = PBXBuildFile; fileRef = 9AA42B1F30B745C68E22AB73 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/Particao.cpp */; };
+		06DB5A07A5194AC0A9692802 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/Particao.cpp */ = {isa = PBXBuildFile; fileRef = DE29725DCD364634BD46F2E5 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/Particao.cpp */; };
+		12F59CDF832F4A0AB7D88F28 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h */ = {isa = PBXBuildFile; fileRef = 4CB2C4AD601C4ADC9B7778C9 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h */; };
+		14DD390E53A549139F7B30C8 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraConstrutivaComCiclos.cpp */ = {isa = PBXBuildFile; fileRef = 899D4EA843C44A71B3AC032C /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraConstrutivaComCiclos.cpp */; };
+		1A0E0CF910CA4EBB9E95157D /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/Puzzle8.h */ = {isa = PBXBuildFile; fileRef = F898511D826142F18D908661 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/Puzzle8.h */; };
+		27D3E7E02F22490EA40B8206 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/Puzzle8.cpp */ = {isa = PBXBuildFile; fileRef = 239D15232B6F4A9FB17895BE /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/Puzzle8.cpp */; };
+		2AD4C16691A244828C0044A6 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 421EE052DB90496B812C5C4C /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/CMakeLists.txt */; };
+		2BB706CE93CE44DBB7E90142 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/ProcuraEngine.cpp */ = {isa = PBXBuildFile; fileRef = 4D9DA197A1AB4370B0BB92BC /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/ProcuraEngine.cpp */; };
+		3B2C10C28DBF49069E018623 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraMelhorativa.cpp */ = {isa = PBXBuildFile; fileRef = E67DFD896D7A4C7FAC0DD082 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraMelhorativa.cpp */; };
+		3FBF34B18BDF4C569F0A197C /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/1802925EFolioA_old.cpp */ = {isa = PBXBuildFile; fileRef = 11EB7925A0AB4253A0EFCF6A /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/1802925EFolioA_old.cpp */; };
+		44885E53583249E6983EC8AC /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/Puzzle8.cpp */ = {isa = PBXBuildFile; fileRef = B6E4215271F642AC8AEB1AF1 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/Puzzle8.cpp */; };
+		47FAB9DE18A746AD95AAD8DB /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraConstrutivaComCiclos.cpp */ = {isa = PBXBuildFile; fileRef = C4050F958BCB428E8B28B43E /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraConstrutivaComCiclos.cpp */; };
+		5392218014654CA48911BA75 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TRand.h */ = {isa = PBXBuildFile; fileRef = 7AFC636EF8474C0A9C3A2D36 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TRand.h */; };
+		5E03B4491848477B9802401E /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraConstrutiva.h */ = {isa = PBXBuildFile; fileRef = 5B27BDE30AAD47C2A4237CA4 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraConstrutiva.h */; };
+		5ED2737E14004D02BDC7D2EF /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraMelhorativa.h */ = {isa = PBXBuildFile; fileRef = ED8FE011E93545C9952B716E /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraMelhorativa.h */; };
+		5EF3EB956A3644BD9656DB11 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/OitoDamas.h */ = {isa = PBXBuildFile; fileRef = 54065A85901B448F8588137A /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/OitoDamas.h */; };
+		661C7788338848A29B687663 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/1802925EFolioA_old.cpp */ = {isa = PBXBuildFile; fileRef = CB1792A848594BA4B497F57F /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/1802925EFolioA_old.cpp */; };
+		6884097C24B94C8F89D584B3 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/xerifes.cpp */ = {isa = PBXBuildFile; fileRef = 71582A45BD8D45ECBB44AD8E /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/xerifes.cpp */; };
+		6963B77BC7B24DCB8E37F20A /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraAdversa.h */ = {isa = PBXBuildFile; fileRef = 2433DAFAC2654FC0A32BC715 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraAdversa.h */; };
+		725CEBD4A4D24B498FE7D312 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/OitoDamas.cpp */ = {isa = PBXBuildFile; fileRef = 42159CD73AC7420E928F252E /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/OitoDamas.cpp */; };
+		761835E3B7C545319649764B /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraAdversa.cpp */ = {isa = PBXBuildFile; fileRef = DC693E9B9B104C0A987DDE44 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraAdversa.cpp */; };
+		78C9C7C246754E48A65ACA6E /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraConstrutivaComCiclos.h */ = {isa = PBXBuildFile; fileRef = D99974F16BA642E6AE093CE4 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraConstrutivaComCiclos.h */; };
+		7933B77D63594D9D920F18C3 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/xerife2.cpp */ = {isa = PBXBuildFile; fileRef = 3AA820A0BBB646D9873E63A1 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/xerife2.cpp */; };
+		796DA95E46B146D9A7D3878F /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TRand.cpp */ = {isa = PBXBuildFile; fileRef = 400CA5EE0EC4471086F87858 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TRand.cpp */; };
+		7DD676898D374E0A8B70AD0E /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h */ = {isa = PBXBuildFile; fileRef = 382697FF541F4BC0A9AA4C4A /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h */; };
+		80651D5E4F0C4156A938B502 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/Particao.cpp */ = {isa = PBXBuildFile; fileRef = B335E8DFE88B4B75AF173D95 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/Particao.cpp */; };
+		8223C40CC9394F7585F340C0 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/ProcuraEngine.cpp */ = {isa = PBXBuildFile; fileRef = A56DC5F14DD74E5285409D5C /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/ProcuraEngine.cpp */; };
+		8BE16178327F4298BE27A9A2 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraMelhorativa.cpp */ = {isa = PBXBuildFile; fileRef = 0B4C8B940A214BA3B2104DF2 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraMelhorativa.cpp */; };
+		8C8364C81C4A4640A4C69644 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/Particao.h */ = {isa = PBXBuildFile; fileRef = 32BA1987D5C44792AC05716F /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/Particao.h */; };
+		8E9BE712C7A448849B5EA885 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraAdversa.h */ = {isa = PBXBuildFile; fileRef = C486331F353C47E49A79A9A6 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraAdversa.h */; };
+		95020924271E41C19447A683 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraConstrutiva.h */ = {isa = PBXBuildFile; fileRef = D8E3FA01D9EB424C8FBFD155 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraConstrutiva.h */; };
+		97BC11F3E0D44CE48EFE1D20 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/xerifes.cpp */ = {isa = PBXBuildFile; fileRef = F9D5D17C53594215937EAB1D /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/xerifes.cpp */; };
+		A3730151BDB24F238FCA25CB /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TRand.cpp */ = {isa = PBXBuildFile; fileRef = 6438F1B8C6B24F159CF9069B /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TRand.cpp */; };
+		A4B96A4215414E6B96B98FB8 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/JogoDoGalo.cpp */ = {isa = PBXBuildFile; fileRef = C52003FDB8824FFABE0D1B9F /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/JogoDoGalo.cpp */; };
+		A54ED97D877E47119F598AC1 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraConstrutivaComCiclos.h */ = {isa = PBXBuildFile; fileRef = 7F798C58AE6E4BE883FDFC2F /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraConstrutivaComCiclos.h */; };
+		A753FA1DAB7C4422A04B5DE0 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/1802925EfolioA.cpp */ = {isa = PBXBuildFile; fileRef = 03FC7FC9815A4F4389F62815 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/1802925EfolioA.cpp */; };
+		A8D01CD69D024DA9BB72B143 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 9E03B45EB8E94D368F55AA09 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/CMakeLists.txt */; };
+		AACDC26570674C4983E4AA86 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TVector.h */ = {isa = PBXBuildFile; fileRef = FA229676766A4D749EC36B9D /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TVector.h */; };
+		AC1463B20FD448CB8DAF0AE6 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TVector.h */ = {isa = PBXBuildFile; fileRef = 1296753185BF4AF99C2AE329 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TVector.h */; };
+		ACC6AB4A0D274A098154BCA5 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraMelhorativa.h */ = {isa = PBXBuildFile; fileRef = CEE52D2DCA624FBE92345A9F /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraMelhorativa.h */; };
+		AF99B36553FB4123BB38414D /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TRand.h */ = {isa = PBXBuildFile; fileRef = 486203375B8D454ABF034338 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TRand.h */; };
+		C12D8370ADA74AE6BC9E65FE /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/JogoDoGalo.h */ = {isa = PBXBuildFile; fileRef = 412C6BEBCD9B4B5AA02FE82F /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/JogoDoGalo.h */; };
+		C2396F4F56DE4E2AB5914220 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/Particao.h */ = {isa = PBXBuildFile; fileRef = 3EC6280107A04F03B6BC8D7C /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/Particao.h */; };
+		C5D2FCE814A94277B3AB4026 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/Puzzle8.h */ = {isa = PBXBuildFile; fileRef = 941A3BA716D44D04BBB03FA2 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/Puzzle8.h */; };
+		C9F2E48C00134D2FA0961B1C /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h */ = {isa = PBXBuildFile; fileRef = D47333A1DD894C5D9DC05EEA /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h */; };
+		CC4BD7A686B14B7F811BF4EB /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraAdversa.cpp */ = {isa = PBXBuildFile; fileRef = 18EA27C426224E058CEBBF7E /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraAdversa.cpp */; };
+		CD5AEA8BC49349D9A3E4CEFE /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 004DA8094A8F456DB10C41F9 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/CMakeLists.txt */; };
+		DA471F5E0A23417EAD1A28F8 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraConstrutiva.cpp */ = {isa = PBXBuildFile; fileRef = 6444E8AFF98D49899145409C /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraConstrutiva.cpp */; };
+		DE2F506F1D484AB7AA0C6B1F /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraConstrutiva.cpp */ = {isa = PBXBuildFile; fileRef = 2F18BBD24C9448B198379FAB /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraConstrutiva.cpp */; };
+		E0D7EE937D274CF6804764A5 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/OitoDamas.cpp */ = {isa = PBXBuildFile; fileRef = 82937271400A47D99CD13A07 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/OitoDamas.cpp */; };
+		E22548AE6FF542AAB2736D02 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/JogoDoGalo.cpp */ = {isa = PBXBuildFile; fileRef = 17DA012FE34C4726B5C40181 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/JogoDoGalo.cpp */; };
+		E5D52F988D0A4D6DB0D98929 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/JogoDoGalo.h */ = {isa = PBXBuildFile; fileRef = BCD5C977E79E4CFE87622103 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/JogoDoGalo.h */; };
+		E7DA5C05E59B4220BC48F178 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/OitoDamas.h */ = {isa = PBXBuildFile; fileRef = B68FC6D98D3243F1BD38FF6F /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/OitoDamas.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildStyle section */
-		6B818380E6864FDA979478C5 /* MinSizeRel */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = MinSizeRel;
-		};
-		9CF3C7A05BCB4C2DBD66B524 /* Debug */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Debug;
-		};
-		E2149F1C78224A218CC26726 /* RelWithDebInfo */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = RelWithDebInfo;
-		};
-		F3EB48D476F04F0389B5BA65 /* Release */ = {
+		C0BC0391E5AD4A08A9B73FF9 /* Release */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = Release;
 		};
+		C7E3CBF2254D452491487EB9 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		D4B2347992204DB4A11200DC /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		DCC419EF4948477292C28D45 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
 /* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
-		299E9BD815EB418DB21E30ED /* PBXContainerItemProxy */ = {
+		5CBE7B5583354CC1A9ECB9F5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 79EF33100AE94D8CA5418C03 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 102D674866AB4378AEC9796B;
 			remoteInfo = ZERO_CHECK;
 		};
-		3EEACA5FFF3B4611933CF677 /* PBXContainerItemProxy */ = {
+		6D8C20A75CC54DF09545A793 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79EF33100AE94D8CA5418C03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 102D674866AB4378AEC9796B;
+			remoteInfo = ZERO_CHECK;
+		};
+		85666B1238234FF9B8464ADF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 79EF33100AE94D8CA5418C03 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3AB5047FEF034E9598E2C098;
 			remoteInfo = 21071IIA_SFML;
 		};
-		4532F031768A4A098B0CCEB3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 79EF33100AE94D8CA5418C03 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 102D674866AB4378AEC9796B;
-			remoteInfo = ZERO_CHECK;
-		};
-		5B77A78CECD44A9B8D21DE24 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 79EF33100AE94D8CA5418C03 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 14AFD6A9817A44DA8B51391D;
-			remoteInfo = 21071IIA_SFML_xerifes;
-		};
-		6BB3E50F92A94BF8A3A93CCB /* PBXContainerItemProxy */ = {
+		A01992197EE74BF69168D199 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 79EF33100AE94D8CA5418C03 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 7B3CCE6636D2407CAE4E0A57;
 			remoteInfo = 21071IIA;
 		};
-		85D44BE08799415793E905BC /* PBXContainerItemProxy */ = {
+		B3907B738917406192BA8CE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79EF33100AE94D8CA5418C03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14AFD6A9817A44DA8B51391D;
+			remoteInfo = 21071IIA_SFML_xerifes;
+		};
+		B447E456D3714F6AB396C624 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 79EF33100AE94D8CA5418C03 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 102D674866AB4378AEC9796B;
 			remoteInfo = ZERO_CHECK;
 		};
-		C0FD5DCFA2854A4FB5CC55EA /* PBXContainerItemProxy */ = {
+		E78449892C794765A1C140B1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 79EF33100AE94D8CA5418C03 /* Project object */;
 			proxyType = 1;
@@ -173,79 +174,80 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01207B9FFECE49BCAA718CDE /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraConstrutiva.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TProcuraConstrutiva.h; path = TProcuraConstrutiva.h; sourceTree = SOURCE_ROOT; };
-		06E808BB84A84ED5A60DB802 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/Particao.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Particao.cpp; path = Particao.cpp; sourceTree = SOURCE_ROOT; };
-		0CF1418C869F40F18C73782D /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/OitoDamas.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OitoDamas.h; path = DiogoAlgoritmos/OitoDamas.h; sourceTree = SOURCE_ROOT; };
-		10C513ED87CF49D79BB21456 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TRand.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TRand.h; path = TRand.h; sourceTree = SOURCE_ROOT; };
-		13441017CED74B3784D71804 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraConstrutivaComCiclos.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TProcuraConstrutivaComCiclos.cpp; path = TProcuraConstrutivaComCiclos.cpp; sourceTree = SOURCE_ROOT; };
-		16E8CC74283B4DF797FD68FC /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/Puzzle8.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Puzzle8.h; path = Puzzle8.h; sourceTree = SOURCE_ROOT; };
-		183E086CD9F143F2AD75723F /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/Particao.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Particao.h; path = DiogoAlgoritmos/Particao.h; sourceTree = SOURCE_ROOT; };
-		199E99B3A6504ACE864A3CE8 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraAdversa.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TProcuraAdversa.h; path = DiogoAlgoritmos/TProcuraAdversa.h; sourceTree = SOURCE_ROOT; };
-		1B83B7534A474C96A8DF6E67 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraConstrutivaComCiclos.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TProcuraConstrutivaComCiclos.h; path = DiogoAlgoritmos/TProcuraConstrutivaComCiclos.h; sourceTree = SOURCE_ROOT; };
-		1D23EA6960E74C2BAC848796 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = operations.h; path = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h"; sourceTree = "<absolute>"; };
-		22EE3607CFF3439AB180D956 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraMelhorativa.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TProcuraMelhorativa.h; path = TProcuraMelhorativa.h; sourceTree = SOURCE_ROOT; };
-		291AAF4230954A5B94AC3F59 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/JogoDoGalo.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = JogoDoGalo.h; path = DiogoAlgoritmos/JogoDoGalo.h; sourceTree = SOURCE_ROOT; };
-		296D3264CD6F4C94ACAF3D28 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		2A9C360511E94EE3BD1983F0 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraConstrutivaComCiclos.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TProcuraConstrutivaComCiclos.cpp; path = DiogoAlgoritmos/TProcuraConstrutivaComCiclos.cpp; sourceTree = SOURCE_ROOT; };
-		2E64F38FBD5B4CC18194865F /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/1802925EFolioA_old.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = 1802925EFolioA_old.cpp; path = 1802925EFolioA_old.cpp; sourceTree = SOURCE_ROOT; };
-		342494B58F24479A9BFC90CD /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraAdversa.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TProcuraAdversa.cpp; path = DiogoAlgoritmos/TProcuraAdversa.cpp; sourceTree = SOURCE_ROOT; };
-		4317808F5A1C4EC296CC4236 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraConstrutiva.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TProcuraConstrutiva.cpp; path = DiogoAlgoritmos/TProcuraConstrutiva.cpp; sourceTree = SOURCE_ROOT; };
-		5FF462A0AB2945F5B2D392AE /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/Puzzle8.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Puzzle8.h; path = DiogoAlgoritmos/Puzzle8.h; sourceTree = SOURCE_ROOT; };
-		606462AA64504589BE2A92D0 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TRand.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TRand.h; path = DiogoAlgoritmos/TRand.h; sourceTree = SOURCE_ROOT; };
-		6229A35DB05A402EB0BAE3F5 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		62B7A07DCAF44DABBD91903A /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraConstrutiva.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TProcuraConstrutiva.cpp; path = TProcuraConstrutiva.cpp; sourceTree = SOURCE_ROOT; };
-		6773C866239C4A0781913FFB /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/JogoDoGalo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = JogoDoGalo.cpp; path = JogoDoGalo.cpp; sourceTree = SOURCE_ROOT; };
-		67BE9C64BEF741ECA860FEC7 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/xerifes.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = xerifes.cpp; path = xerifes.cpp; sourceTree = SOURCE_ROOT; };
-		696AFEAD4A204EDFA51C01B1 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/1802925EfolioA.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = 1802925EfolioA.cpp; path = 1802925EfolioA.cpp; sourceTree = SOURCE_ROOT; };
-		6E08F4AC2BB54A0CB048C591 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/Puzzle8.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Puzzle8.cpp; path = Puzzle8.cpp; sourceTree = SOURCE_ROOT; };
-		71D6D769E27C4F54B228D8D0 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TRand.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TRand.cpp; path = DiogoAlgoritmos/TRand.cpp; sourceTree = SOURCE_ROOT; };
-		74361DF440AE493E94A19B47 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraMelhorativa.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TProcuraMelhorativa.cpp; path = DiogoAlgoritmos/TProcuraMelhorativa.cpp; sourceTree = SOURCE_ROOT; };
-		7E085C5A0FCF4BACBC8BBA30 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraConstrutiva.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TProcuraConstrutiva.h; path = DiogoAlgoritmos/TProcuraConstrutiva.h; sourceTree = SOURCE_ROOT; };
-		8218C2C5B70345DAAFF6F0F2 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/OitoDamas.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OitoDamas.cpp; path = OitoDamas.cpp; sourceTree = SOURCE_ROOT; };
-		82B5E595FDFE4360939A35ED /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/OitoDamas.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OitoDamas.h; path = OitoDamas.h; sourceTree = SOURCE_ROOT; };
-		83ADDADBD8204B7D8AC21081 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = operations.h; path = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h"; sourceTree = "<absolute>"; };
-		86653AD62E334DEDA45C5FF9 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/xerifes.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = xerifes.cpp; path = xerifes.cpp; sourceTree = SOURCE_ROOT; };
-		8820597970474281AAC161A9 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = operations.h; path = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h"; sourceTree = "<absolute>"; };
-		89898F8EEEBA41DBB71BECD4 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/ProcuraEngine.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ProcuraEngine.cpp; path = DiogoAlgoritmos/ProcuraEngine.cpp; sourceTree = SOURCE_ROOT; };
-		942E93FDC7564505979EC824 /* 21071IIA_SFML_xerifes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = 21071IIA_SFML_xerifes; sourceTree = BUILT_PRODUCTS_DIR; };
-		97E30FB1D81A4F40B54D6A1A /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraMelhorativa.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TProcuraMelhorativa.h; path = DiogoAlgoritmos/TProcuraMelhorativa.h; sourceTree = SOURCE_ROOT; };
-		98BD491D0F04445C9B20CFB3 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/OitoDamas.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OitoDamas.cpp; path = DiogoAlgoritmos/OitoDamas.cpp; sourceTree = SOURCE_ROOT; };
-		9AA42B1F30B745C68E22AB73 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/Particao.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Particao.cpp; path = DiogoAlgoritmos/Particao.cpp; sourceTree = SOURCE_ROOT; };
-		9B8C37CDE52C4EDAA022304B /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/ProcuraEngine.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ProcuraEngine.cpp; path = ProcuraEngine.cpp; sourceTree = SOURCE_ROOT; };
-		9C0AF4D9B28344558C6E3C65 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraAdversa.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TProcuraAdversa.h; path = TProcuraAdversa.h; sourceTree = SOURCE_ROOT; };
-		9F479060588E4B298A562A59 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/JogoDoGalo.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = JogoDoGalo.h; path = JogoDoGalo.h; sourceTree = SOURCE_ROOT; };
-		B59D5DBF4DE5480E98E7ECEE /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraConstrutivaComCiclos.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TProcuraConstrutivaComCiclos.h; path = TProcuraConstrutivaComCiclos.h; sourceTree = SOURCE_ROOT; };
-		C169715F2F854DDBA37B78FB /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraMelhorativa.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TProcuraMelhorativa.cpp; path = TProcuraMelhorativa.cpp; sourceTree = SOURCE_ROOT; };
-		C5F61647AB43451292A63C4A /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/1802925EFolioA_old.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = 1802925EFolioA_old.cpp; path = 1802925EFolioA_old.cpp; sourceTree = SOURCE_ROOT; };
-		C79713F998A24361AD3F7A11 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		CF2B825BBC0F43E99E115242 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraAdversa.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TProcuraAdversa.cpp; path = TProcuraAdversa.cpp; sourceTree = SOURCE_ROOT; };
-		D456A747064F4FDBB317383E /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TVector.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TVector.h; path = TVector.h; sourceTree = SOURCE_ROOT; };
-		E33A3F56708D4B3A9084323D /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		E82F6DADBAA344FBB66409F8 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/JogoDoGalo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = JogoDoGalo.cpp; path = DiogoAlgoritmos/JogoDoGalo.cpp; sourceTree = SOURCE_ROOT; };
-		E9D441B8B8E94A6983B76559 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/Puzzle8.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Puzzle8.cpp; path = DiogoAlgoritmos/Puzzle8.cpp; sourceTree = SOURCE_ROOT; };
-		EA85C42BDF7F4ADC9CBE5DCE /* 21071IIA_SFML */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = 21071IIA_SFML; sourceTree = BUILT_PRODUCTS_DIR; };
-		EDED114287EC406CB3C9B25B /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TRand.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TRand.cpp; path = TRand.cpp; sourceTree = SOURCE_ROOT; };
-		F3F8EFC1AA0542C9BCF4ADE0 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TVector.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TVector.h; path = DiogoAlgoritmos/TVector.h; sourceTree = SOURCE_ROOT; };
-		FD45DA706253485480F50A0C /* 21071IIA */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = 21071IIA; sourceTree = BUILT_PRODUCTS_DIR; };
-		FEF05A72B38B4D73BDD43AEC /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/Particao.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Particao.h; path = Particao.h; sourceTree = SOURCE_ROOT; };
+		004DA8094A8F456DB10C41F9 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		03FC7FC9815A4F4389F62815 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/1802925EfolioA.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = 1802925EfolioA.cpp; path = 1802925EfolioA.cpp; sourceTree = SOURCE_ROOT; };
+		0B4C8B940A214BA3B2104DF2 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraMelhorativa.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TProcuraMelhorativa.cpp; path = TProcuraMelhorativa.cpp; sourceTree = SOURCE_ROOT; };
+		11EB7925A0AB4253A0EFCF6A /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/1802925EFolioA_old.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = 1802925EFolioA_old.cpp; path = 1802925EFolioA_old.cpp; sourceTree = SOURCE_ROOT; };
+		1296753185BF4AF99C2AE329 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TVector.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TVector.h; path = DiogoAlgoritmos/TVector.h; sourceTree = SOURCE_ROOT; };
+		17DA012FE34C4726B5C40181 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/JogoDoGalo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = JogoDoGalo.cpp; path = DiogoAlgoritmos/JogoDoGalo.cpp; sourceTree = SOURCE_ROOT; };
+		18EA27C426224E058CEBBF7E /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraAdversa.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TProcuraAdversa.cpp; path = TProcuraAdversa.cpp; sourceTree = SOURCE_ROOT; };
+		239D15232B6F4A9FB17895BE /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/Puzzle8.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Puzzle8.cpp; path = Puzzle8.cpp; sourceTree = SOURCE_ROOT; };
+		2433DAFAC2654FC0A32BC715 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraAdversa.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TProcuraAdversa.h; path = TProcuraAdversa.h; sourceTree = SOURCE_ROOT; };
+		253D89A85FAF4B46A3392EBA /* 21071IIA_SFML */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = 21071IIA_SFML; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F18BBD24C9448B198379FAB /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraConstrutiva.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TProcuraConstrutiva.cpp; path = DiogoAlgoritmos/TProcuraConstrutiva.cpp; sourceTree = SOURCE_ROOT; };
+		32BA1987D5C44792AC05716F /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/Particao.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Particao.h; path = DiogoAlgoritmos/Particao.h; sourceTree = SOURCE_ROOT; };
+		382697FF541F4BC0A9AA4C4A /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = operations.h; path = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h"; sourceTree = "<absolute>"; };
+		3AA820A0BBB646D9873E63A1 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/xerife2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = xerife2.cpp; path = xerife2.cpp; sourceTree = SOURCE_ROOT; };
+		3EC6280107A04F03B6BC8D7C /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/Particao.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Particao.h; path = Particao.h; sourceTree = SOURCE_ROOT; };
+		400CA5EE0EC4471086F87858 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TRand.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TRand.cpp; path = TRand.cpp; sourceTree = SOURCE_ROOT; };
+		412C6BEBCD9B4B5AA02FE82F /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/JogoDoGalo.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = JogoDoGalo.h; path = JogoDoGalo.h; sourceTree = SOURCE_ROOT; };
+		42159CD73AC7420E928F252E /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/OitoDamas.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OitoDamas.cpp; path = OitoDamas.cpp; sourceTree = SOURCE_ROOT; };
+		421EE052DB90496B812C5C4C /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		486203375B8D454ABF034338 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TRand.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TRand.h; path = TRand.h; sourceTree = SOURCE_ROOT; };
+		4CB2C4AD601C4ADC9B7778C9 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = operations.h; path = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h"; sourceTree = "<absolute>"; };
+		4D9DA197A1AB4370B0BB92BC /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/ProcuraEngine.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ProcuraEngine.cpp; path = ProcuraEngine.cpp; sourceTree = SOURCE_ROOT; };
+		54065A85901B448F8588137A /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/OitoDamas.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OitoDamas.h; path = OitoDamas.h; sourceTree = SOURCE_ROOT; };
+		5B27BDE30AAD47C2A4237CA4 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraConstrutiva.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TProcuraConstrutiva.h; path = TProcuraConstrutiva.h; sourceTree = SOURCE_ROOT; };
+		6438F1B8C6B24F159CF9069B /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TRand.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TRand.cpp; path = DiogoAlgoritmos/TRand.cpp; sourceTree = SOURCE_ROOT; };
+		6444E8AFF98D49899145409C /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraConstrutiva.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TProcuraConstrutiva.cpp; path = TProcuraConstrutiva.cpp; sourceTree = SOURCE_ROOT; };
+		71582A45BD8D45ECBB44AD8E /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/xerifes.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = xerifes.cpp; path = xerifes.cpp; sourceTree = SOURCE_ROOT; };
+		7AFC636EF8474C0A9C3A2D36 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TRand.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TRand.h; path = DiogoAlgoritmos/TRand.h; sourceTree = SOURCE_ROOT; };
+		7F798C58AE6E4BE883FDFC2F /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraConstrutivaComCiclos.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TProcuraConstrutivaComCiclos.h; path = DiogoAlgoritmos/TProcuraConstrutivaComCiclos.h; sourceTree = SOURCE_ROOT; };
+		82937271400A47D99CD13A07 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/OitoDamas.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OitoDamas.cpp; path = DiogoAlgoritmos/OitoDamas.cpp; sourceTree = SOURCE_ROOT; };
+		899D4EA843C44A71B3AC032C /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraConstrutivaComCiclos.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TProcuraConstrutivaComCiclos.cpp; path = DiogoAlgoritmos/TProcuraConstrutivaComCiclos.cpp; sourceTree = SOURCE_ROOT; };
+		941A3BA716D44D04BBB03FA2 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/Puzzle8.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Puzzle8.h; path = DiogoAlgoritmos/Puzzle8.h; sourceTree = SOURCE_ROOT; };
+		9E03B45EB8E94D368F55AA09 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		A56DC5F14DD74E5285409D5C /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/ProcuraEngine.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ProcuraEngine.cpp; path = DiogoAlgoritmos/ProcuraEngine.cpp; sourceTree = SOURCE_ROOT; };
+		B335E8DFE88B4B75AF173D95 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/Particao.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Particao.cpp; path = Particao.cpp; sourceTree = SOURCE_ROOT; };
+		B68FC6D98D3243F1BD38FF6F /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/OitoDamas.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OitoDamas.h; path = DiogoAlgoritmos/OitoDamas.h; sourceTree = SOURCE_ROOT; };
+		B6E4215271F642AC8AEB1AF1 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/Puzzle8.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Puzzle8.cpp; path = DiogoAlgoritmos/Puzzle8.cpp; sourceTree = SOURCE_ROOT; };
+		BCD5C977E79E4CFE87622103 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/JogoDoGalo.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = JogoDoGalo.h; path = DiogoAlgoritmos/JogoDoGalo.h; sourceTree = SOURCE_ROOT; };
+		C4050F958BCB428E8B28B43E /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraConstrutivaComCiclos.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TProcuraConstrutivaComCiclos.cpp; path = TProcuraConstrutivaComCiclos.cpp; sourceTree = SOURCE_ROOT; };
+		C486331F353C47E49A79A9A6 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraAdversa.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TProcuraAdversa.h; path = DiogoAlgoritmos/TProcuraAdversa.h; sourceTree = SOURCE_ROOT; };
+		C52003FDB8824FFABE0D1B9F /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/JogoDoGalo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = JogoDoGalo.cpp; path = JogoDoGalo.cpp; sourceTree = SOURCE_ROOT; };
+		CB1792A848594BA4B497F57F /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/1802925EFolioA_old.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = 1802925EFolioA_old.cpp; path = 1802925EFolioA_old.cpp; sourceTree = SOURCE_ROOT; };
+		CCEEE1E5D21C4465B767A06E /* 21071IIA */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = 21071IIA; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEE52D2DCA624FBE92345A9F /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraMelhorativa.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TProcuraMelhorativa.h; path = DiogoAlgoritmos/TProcuraMelhorativa.h; sourceTree = SOURCE_ROOT; };
+		D47333A1DD894C5D9DC05EEA /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = operations.h; path = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h"; sourceTree = "<absolute>"; };
+		D8E3FA01D9EB424C8FBFD155 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraConstrutiva.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TProcuraConstrutiva.h; path = DiogoAlgoritmos/TProcuraConstrutiva.h; sourceTree = SOURCE_ROOT; };
+		D99974F16BA642E6AE093CE4 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraConstrutivaComCiclos.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TProcuraConstrutivaComCiclos.h; path = TProcuraConstrutivaComCiclos.h; sourceTree = SOURCE_ROOT; };
+		DC693E9B9B104C0A987DDE44 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraAdversa.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TProcuraAdversa.cpp; path = DiogoAlgoritmos/TProcuraAdversa.cpp; sourceTree = SOURCE_ROOT; };
+		DE29725DCD364634BD46F2E5 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/Particao.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Particao.cpp; path = DiogoAlgoritmos/Particao.cpp; sourceTree = SOURCE_ROOT; };
+		E67DFD896D7A4C7FAC0DD082 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraMelhorativa.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TProcuraMelhorativa.cpp; path = DiogoAlgoritmos/TProcuraMelhorativa.cpp; sourceTree = SOURCE_ROOT; };
+		ED8FE011E93545C9952B716E /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraMelhorativa.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TProcuraMelhorativa.h; path = TProcuraMelhorativa.h; sourceTree = SOURCE_ROOT; };
+		F74DF560702E46CAA7964E25 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		F898511D826142F18D908661 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/Puzzle8.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Puzzle8.h; path = Puzzle8.h; sourceTree = SOURCE_ROOT; };
+		F9D5D17C53594215937EAB1D /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/xerifes.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = xerifes.cpp; path = xerifes.cpp; sourceTree = SOURCE_ROOT; };
+		FA229676766A4D749EC36B9D /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TVector.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TVector.h; path = TVector.h; sourceTree = SOURCE_ROOT; };
+		FBA119F4B5DD4A578BF6E97A /* 21071IIA_SFML_xerifes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = 21071IIA_SFML_xerifes; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		60B8DD0965514DEB9D2B73B4 /* Frameworks */ = {
+		22B84515B5D44178BFB131B6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		788B74D48025413DBA8AB872 /* Frameworks */ = {
+		BFDE15E048CF438A9C8ADF59 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9B319BA164C2475FB8B9F9B8 /* Frameworks */ = {
+		EEBD452B17734E1E8E0A4469 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -255,169 +257,170 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1AF3F528BDBB4EE4B32C0662 /* Frameworks */ = {
+		00043C5B10E74CF0AEE42A8E /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1EA981A1596C42E4B58AA42F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FD45DA706253485480F50A0C /* 21071IIA */,
-				EA85C42BDF7F4ADC9CBE5DCE /* 21071IIA_SFML */,
-				942E93FDC7564505979EC824 /* 21071IIA_SFML_xerifes */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		3A4E3C6D76B84376A8BE08FC /* Source Files */ = {
-			isa = PBXGroup;
-			children = (
-				2E64F38FBD5B4CC18194865F /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/1802925EFolioA_old.cpp */,
-				696AFEAD4A204EDFA51C01B1 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/1802925EfolioA.cpp */,
-				E82F6DADBAA344FBB66409F8 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/JogoDoGalo.cpp */,
-				98BD491D0F04445C9B20CFB3 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/OitoDamas.cpp */,
-				9AA42B1F30B745C68E22AB73 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/Particao.cpp */,
-				89898F8EEEBA41DBB71BECD4 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/ProcuraEngine.cpp */,
-				E9D441B8B8E94A6983B76559 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/Puzzle8.cpp */,
-				342494B58F24479A9BFC90CD /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraAdversa.cpp */,
-				4317808F5A1C4EC296CC4236 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraConstrutiva.cpp */,
-				2A9C360511E94EE3BD1983F0 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraConstrutivaComCiclos.cpp */,
-				74361DF440AE493E94A19B47 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraMelhorativa.cpp */,
-				71D6D769E27C4F54B228D8D0 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TRand.cpp */,
-				6773C866239C4A0781913FFB /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/JogoDoGalo.cpp */,
-				8218C2C5B70345DAAFF6F0F2 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/OitoDamas.cpp */,
-				06E808BB84A84ED5A60DB802 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/Particao.cpp */,
-				9B8C37CDE52C4EDAA022304B /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/ProcuraEngine.cpp */,
-				6E08F4AC2BB54A0CB048C591 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/Puzzle8.cpp */,
-				CF2B825BBC0F43E99E115242 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraAdversa.cpp */,
-				62B7A07DCAF44DABBD91903A /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraConstrutiva.cpp */,
-				13441017CED74B3784D71804 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraConstrutivaComCiclos.cpp */,
-				C169715F2F854DDBA37B78FB /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraMelhorativa.cpp */,
-				EDED114287EC406CB3C9B25B /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TRand.cpp */,
-				86653AD62E334DEDA45C5FF9 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/xerifes.cpp */,
+				11EB7925A0AB4253A0EFCF6A /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/1802925EFolioA_old.cpp */,
+				03FC7FC9815A4F4389F62815 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/1802925EfolioA.cpp */,
+				17DA012FE34C4726B5C40181 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/JogoDoGalo.cpp */,
+				82937271400A47D99CD13A07 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/OitoDamas.cpp */,
+				DE29725DCD364634BD46F2E5 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/Particao.cpp */,
+				A56DC5F14DD74E5285409D5C /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/ProcuraEngine.cpp */,
+				B6E4215271F642AC8AEB1AF1 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/Puzzle8.cpp */,
+				DC693E9B9B104C0A987DDE44 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraAdversa.cpp */,
+				2F18BBD24C9448B198379FAB /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraConstrutiva.cpp */,
+				899D4EA843C44A71B3AC032C /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraConstrutivaComCiclos.cpp */,
+				E67DFD896D7A4C7FAC0DD082 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraMelhorativa.cpp */,
+				6438F1B8C6B24F159CF9069B /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TRand.cpp */,
+				C52003FDB8824FFABE0D1B9F /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/JogoDoGalo.cpp */,
+				42159CD73AC7420E928F252E /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/OitoDamas.cpp */,
+				B335E8DFE88B4B75AF173D95 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/Particao.cpp */,
+				4D9DA197A1AB4370B0BB92BC /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/ProcuraEngine.cpp */,
+				239D15232B6F4A9FB17895BE /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/Puzzle8.cpp */,
+				18EA27C426224E058CEBBF7E /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraAdversa.cpp */,
+				6444E8AFF98D49899145409C /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraConstrutiva.cpp */,
+				C4050F958BCB428E8B28B43E /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraConstrutivaComCiclos.cpp */,
+				0B4C8B940A214BA3B2104DF2 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraMelhorativa.cpp */,
+				400CA5EE0EC4471086F87858 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TRand.cpp */,
+				3AA820A0BBB646D9873E63A1 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/xerife2.cpp */,
+				71582A45BD8D45ECBB44AD8E /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/xerifes.cpp */,
 			);
 			name = "Source Files";
 			sourceTree = "<group>";
 		};
-		3B491D6A9B6F4BFBA15C30B1 /* 21071IIA_SFML_xerifes */ = {
+		0E81398EFEF04D0691527E93 /* 21071IIA_SFML_xerifes */ = {
 			isa = PBXGroup;
 			children = (
-				A193F1EA8B0742A2AE373381 /* Source Files */,
-				8ED0060D43AD4C5CA4852467 /* Header Files */,
-				E33A3F56708D4B3A9084323D /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/CMakeLists.txt */,
+				774E13EA372546D2A9F3A8C2 /* Source Files */,
+				D413B2A39ADB47F59F99F3CB /* Header Files */,
+				9E03B45EB8E94D368F55AA09 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/CMakeLists.txt */,
 			);
 			name = 21071IIA_SFML_xerifes;
 			sourceTree = "<group>";
 		};
-		42D73AEC611E42D1BC4CF2F4 /* ALL_BUILD */ = {
-			isa = PBXGroup;
-			children = (
-				FC21AFF1CAC748A1947115DA /* CMake Rules */,
-				C79713F998A24361AD3F7A11 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/CMakeLists.txt */,
-			);
-			name = ALL_BUILD;
-			sourceTree = "<group>";
-		};
-		5794F261C3E2411CBC80376B /* Header Files */ = {
-			isa = PBXGroup;
-			children = (
-				1D23EA6960E74C2BAC848796 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h */,
-			);
-			name = "Header Files";
-			sourceTree = "<group>";
-		};
-		8120D13EB555441B806A9731 /* Source Files */ = {
-			isa = PBXGroup;
-			children = (
-				C5F61647AB43451292A63C4A /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/1802925EFolioA_old.cpp */,
-			);
-			name = "Source Files";
-			sourceTree = "<group>";
-		};
-		8ED0060D43AD4C5CA4852467 /* Header Files */ = {
-			isa = PBXGroup;
-			children = (
-				8820597970474281AAC161A9 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h */,
-			);
-			name = "Header Files";
-			sourceTree = "<group>";
-		};
-		963059A26E104711A0AAE680 = {
-			isa = PBXGroup;
-			children = (
-				EC19ABF121B848F4B052306E /* 21071IIA */,
-				98E038C7F8564850A11ACC4F /* 21071IIA_SFML */,
-				3B491D6A9B6F4BFBA15C30B1 /* 21071IIA_SFML_xerifes */,
-				42D73AEC611E42D1BC4CF2F4 /* ALL_BUILD */,
-				1EA981A1596C42E4B58AA42F /* Products */,
-				1AF3F528BDBB4EE4B32C0662 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		98E038C7F8564850A11ACC4F /* 21071IIA_SFML */ = {
-			isa = PBXGroup;
-			children = (
-				8120D13EB555441B806A9731 /* Source Files */,
-				5794F261C3E2411CBC80376B /* Header Files */,
-				296D3264CD6F4C94ACAF3D28 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/CMakeLists.txt */,
-			);
-			name = 21071IIA_SFML;
-			sourceTree = "<group>";
-		};
-		9CE7711241B44666ABBD7699 /* Header Files */ = {
-			isa = PBXGroup;
-			children = (
-				83ADDADBD8204B7D8AC21081 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h */,
-				291AAF4230954A5B94AC3F59 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/JogoDoGalo.h */,
-				0CF1418C869F40F18C73782D /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/OitoDamas.h */,
-				183E086CD9F143F2AD75723F /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/Particao.h */,
-				5FF462A0AB2945F5B2D392AE /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/Puzzle8.h */,
-				199E99B3A6504ACE864A3CE8 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraAdversa.h */,
-				7E085C5A0FCF4BACBC8BBA30 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraConstrutiva.h */,
-				1B83B7534A474C96A8DF6E67 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraConstrutivaComCiclos.h */,
-				97E30FB1D81A4F40B54D6A1A /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraMelhorativa.h */,
-				606462AA64504589BE2A92D0 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TRand.h */,
-				F3F8EFC1AA0542C9BCF4ADE0 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TVector.h */,
-				9F479060588E4B298A562A59 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/JogoDoGalo.h */,
-				82B5E595FDFE4360939A35ED /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/OitoDamas.h */,
-				FEF05A72B38B4D73BDD43AEC /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/Particao.h */,
-				16E8CC74283B4DF797FD68FC /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/Puzzle8.h */,
-				9C0AF4D9B28344558C6E3C65 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraAdversa.h */,
-				01207B9FFECE49BCAA718CDE /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraConstrutiva.h */,
-				B59D5DBF4DE5480E98E7ECEE /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraConstrutivaComCiclos.h */,
-				22EE3607CFF3439AB180D956 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraMelhorativa.h */,
-				10C513ED87CF49D79BB21456 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TRand.h */,
-				D456A747064F4FDBB317383E /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TVector.h */,
-			);
-			name = "Header Files";
-			sourceTree = "<group>";
-		};
-		A193F1EA8B0742A2AE373381 /* Source Files */ = {
-			isa = PBXGroup;
-			children = (
-				67BE9C64BEF741ECA860FEC7 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/xerifes.cpp */,
-			);
-			name = "Source Files";
-			sourceTree = "<group>";
-		};
-		EC19ABF121B848F4B052306E /* 21071IIA */ = {
-			isa = PBXGroup;
-			children = (
-				3A4E3C6D76B84376A8BE08FC /* Source Files */,
-				9CE7711241B44666ABBD7699 /* Header Files */,
-				6229A35DB05A402EB0BAE3F5 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/CMakeLists.txt */,
-			);
-			name = 21071IIA;
-			sourceTree = "<group>";
-		};
-		FC21AFF1CAC748A1947115DA /* CMake Rules */ = {
+		1B9DC80C611441C6BE84EF43 /* CMake Rules */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		73B7940D39054D5894B8E1FD /* 21071IIA */ = {
+			isa = PBXGroup;
+			children = (
+				00043C5B10E74CF0AEE42A8E /* Source Files */,
+				83F35C629906423CBA6EE29E /* Header Files */,
+				421EE052DB90496B812C5C4C /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/CMakeLists.txt */,
+			);
+			name = 21071IIA;
+			sourceTree = "<group>";
+		};
+		774E13EA372546D2A9F3A8C2 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				F9D5D17C53594215937EAB1D /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/xerifes.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		82BD0B1830754C97A7B72E09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCEEE1E5D21C4465B767A06E /* 21071IIA */,
+				253D89A85FAF4B46A3392EBA /* 21071IIA_SFML */,
+				FBA119F4B5DD4A578BF6E97A /* 21071IIA_SFML_xerifes */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83F35C629906423CBA6EE29E /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				D47333A1DD894C5D9DC05EEA /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h */,
+				BCD5C977E79E4CFE87622103 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/JogoDoGalo.h */,
+				B68FC6D98D3243F1BD38FF6F /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/OitoDamas.h */,
+				32BA1987D5C44792AC05716F /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/Particao.h */,
+				941A3BA716D44D04BBB03FA2 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/Puzzle8.h */,
+				C486331F353C47E49A79A9A6 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraAdversa.h */,
+				D8E3FA01D9EB424C8FBFD155 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraConstrutiva.h */,
+				7F798C58AE6E4BE883FDFC2F /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraConstrutivaComCiclos.h */,
+				CEE52D2DCA624FBE92345A9F /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraMelhorativa.h */,
+				7AFC636EF8474C0A9C3A2D36 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TRand.h */,
+				1296753185BF4AF99C2AE329 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TVector.h */,
+				412C6BEBCD9B4B5AA02FE82F /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/JogoDoGalo.h */,
+				54065A85901B448F8588137A /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/OitoDamas.h */,
+				3EC6280107A04F03B6BC8D7C /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/Particao.h */,
+				F898511D826142F18D908661 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/Puzzle8.h */,
+				2433DAFAC2654FC0A32BC715 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraAdversa.h */,
+				5B27BDE30AAD47C2A4237CA4 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraConstrutiva.h */,
+				D99974F16BA642E6AE093CE4 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraConstrutivaComCiclos.h */,
+				ED8FE011E93545C9952B716E /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraMelhorativa.h */,
+				486203375B8D454ABF034338 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TRand.h */,
+				FA229676766A4D749EC36B9D /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TVector.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		8BD4082265884604894B82EC /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				1B9DC80C611441C6BE84EF43 /* CMake Rules */,
+				F74DF560702E46CAA7964E25 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		91571819EA3C4C26B4473CE2 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CB2C4AD601C4ADC9B7778C9 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		984B289C92DA4D96875B9342 /* 21071IIA_SFML */ = {
+			isa = PBXGroup;
+			children = (
+				A135E4F661F648EDAF1C3494 /* Source Files */,
+				91571819EA3C4C26B4473CE2 /* Header Files */,
+				004DA8094A8F456DB10C41F9 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/CMakeLists.txt */,
+			);
+			name = 21071IIA_SFML;
+			sourceTree = "<group>";
+		};
+		A135E4F661F648EDAF1C3494 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB1792A848594BA4B497F57F /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/1802925EFolioA_old.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		C487B3F3814242919BE8776A = {
+			isa = PBXGroup;
+			children = (
+				73B7940D39054D5894B8E1FD /* 21071IIA */,
+				984B289C92DA4D96875B9342 /* 21071IIA_SFML */,
+				0E81398EFEF04D0691527E93 /* 21071IIA_SFML_xerifes */,
+				8BD4082265884604894B82EC /* ALL_BUILD */,
+				82BD0B1830754C97A7B72E09 /* Products */,
+				DBBDB0DE079E436C999134E8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D413B2A39ADB47F59F99F3CB /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				382697FF541F4BC0A9AA4C4A /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		DBBDB0DE079E436C999134E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -425,53 +428,53 @@
 /* Begin PBXNativeTarget section */
 		14AFD6A9817A44DA8B51391D /* 21071IIA_SFML_xerifes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 772093EB0F3548178582368C /* Build configuration list for PBXNativeTarget "21071IIA_SFML_xerifes" */;
+			buildConfigurationList = AA46B7AC3CE74965B9981A7E /* Build configuration list for PBXNativeTarget "21071IIA_SFML_xerifes" */;
 			buildPhases = (
-				3E60EBB2C3C74B30B08C20E2 /* Sources */,
-				9B319BA164C2475FB8B9F9B8 /* Frameworks */,
+				637BA842488D40A88702BA7D /* Sources */,
+				EEBD452B17734E1E8E0A4469 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1F3FD2F2DBC240D0B6241E3A /* PBXTargetDependency */,
+				AD6D5DC3277C43E0A126BEF2 /* PBXTargetDependency */,
 			);
 			name = 21071IIA_SFML_xerifes;
 			productName = 21071IIA_SFML_xerifes;
-			productReference = 942E93FDC7564505979EC824 /* 21071IIA_SFML_xerifes */;
+			productReference = FBA119F4B5DD4A578BF6E97A /* 21071IIA_SFML_xerifes */;
 			productType = "com.apple.product-type.tool";
 		};
 		3AB5047FEF034E9598E2C098 /* 21071IIA_SFML */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9707DE526B6747F29FD8A3B4 /* Build configuration list for PBXNativeTarget "21071IIA_SFML" */;
+			buildConfigurationList = 52F98433EFB6476C84F446F5 /* Build configuration list for PBXNativeTarget "21071IIA_SFML" */;
 			buildPhases = (
-				4DE316FEE0EE4BF29E103CF7 /* Sources */,
-				60B8DD0965514DEB9D2B73B4 /* Frameworks */,
+				7484491912104F8C829CB338 /* Sources */,
+				22B84515B5D44178BFB131B6 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A758480B265348B791E7DC7B /* PBXTargetDependency */,
+				9A4C319E9858432280FED362 /* PBXTargetDependency */,
 			);
 			name = 21071IIA_SFML;
 			productName = 21071IIA_SFML;
-			productReference = EA85C42BDF7F4ADC9CBE5DCE /* 21071IIA_SFML */;
+			productReference = 253D89A85FAF4B46A3392EBA /* 21071IIA_SFML */;
 			productType = "com.apple.product-type.tool";
 		};
 		7B3CCE6636D2407CAE4E0A57 /* 21071IIA */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CDF5F0A06A954BDB9119447A /* Build configuration list for PBXNativeTarget "21071IIA" */;
+			buildConfigurationList = 0BFCD3DFADA74AAE8AFEAE92 /* Build configuration list for PBXNativeTarget "21071IIA" */;
 			buildPhases = (
-				F480869C66D04A31B72D2EB3 /* Sources */,
-				788B74D48025413DBA8AB872 /* Frameworks */,
+				D4B3CFACA79F4FDCBD3E8A32 /* Sources */,
+				BFDE15E048CF438A9C8ADF59 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CE2DBD8B9AA74EE4A5431147 /* PBXTargetDependency */,
+				AC5603DDB8584692AE28C2EA /* PBXTargetDependency */,
 			);
 			name = 21071IIA;
 			productName = 21071IIA;
-			productReference = FD45DA706253485480F50A0C /* 21071IIA */;
+			productReference = CCEEE1E5D21C4465B767A06E /* 21071IIA */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -483,18 +486,18 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1530;
 			};
-			buildConfigurationList = B81B1476EF724F0E9A281B5E /* Build configuration list for PBXProject "21071IIA" */;
+			buildConfigurationList = CFB348F1EF5F440092D8D23A /* Build configuration list for PBXProject "21071IIA" */;
 			buildSettings = {
 			};
 			buildStyles = (
-				9CF3C7A05BCB4C2DBD66B524 /* Debug */,
-				F3EB48D476F04F0389B5BA65 /* Release */,
-				6B818380E6864FDA979478C5 /* MinSizeRel */,
-				E2149F1C78224A218CC26726 /* RelWithDebInfo */,
+				DCC419EF4948477292C28D45 /* Debug */,
+				C0BC0391E5AD4A08A9B73FF9 /* Release */,
+				C7E3CBF2254D452491487EB9 /* MinSizeRel */,
+				D4B2347992204DB4A11200DC /* RelWithDebInfo */,
 			);
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 0;
-			mainGroup = 963059A26E104711A0AAE680;
+			mainGroup = C487B3F3814242919BE8776A;
 			projectDirPath = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA";
 			projectRoot = "";
 			targets = (
@@ -607,116 +610,95 @@ exit 0";
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3E60EBB2C3C74B30B08C20E2 /* Sources */ = {
+		637BA842488D40A88702BA7D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BEF3E17EAB54588B1529A14 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/xerifes.cpp */,
+				97BC11F3E0D44CE48EFE1D20 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/xerifes.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4DE316FEE0EE4BF29E103CF7 /* Sources */ = {
+		7484491912104F8C829CB338 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9ABA2D825974593B635B95F /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/1802925EFolioA_old.cpp */,
+				661C7788338848A29B687663 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/1802925EFolioA_old.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F480869C66D04A31B72D2EB3 /* Sources */ = {
+		D4B3CFACA79F4FDCBD3E8A32 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09D097E14E1747DEB27CABB3 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/1802925EFolioA_old.cpp */,
-				244EE6CF0FAE435CBD8142F1 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/1802925EfolioA.cpp */,
-				5A467E7620544A88A88EF779 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/JogoDoGalo.cpp */,
-				F09CA88700FC4623B2ECF529 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/OitoDamas.cpp */,
-				FE4043F34E004E47AC021BD9 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/Particao.cpp */,
-				FA22B8540B134B2E94F28BBA /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/ProcuraEngine.cpp */,
-				207A0516259143139FBE0F19 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/Puzzle8.cpp */,
-				CE10BD78862E49D0B8516864 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraAdversa.cpp */,
-				153764F8D70E460FBAC07778 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraConstrutiva.cpp */,
-				19EFE9C1EBB24923948C00E2 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraConstrutivaComCiclos.cpp */,
-				C47146200FFA4098835E2008 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraMelhorativa.cpp */,
-				C395144DA25E489CB2B39CF4 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TRand.cpp */,
-				F71E5416DC794C71AC25AE4A /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/JogoDoGalo.cpp */,
-				9B891358EAD94903A065ECC8 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/OitoDamas.cpp */,
-				A968824B983A42A4BEE9CE73 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/Particao.cpp */,
-				68617C4592C64F8CA139F0CA /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/ProcuraEngine.cpp */,
-				319867474A9040B3B9252900 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/Puzzle8.cpp */,
-				03CCD75618A14C919E01E707 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraAdversa.cpp */,
-				1F6BCDB2A28247619DD6263F /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraConstrutiva.cpp */,
-				2B4EE7A9C1B64713BA270613 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraConstrutivaComCiclos.cpp */,
-				C6AA499D7B274FA29820A3CC /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraMelhorativa.cpp */,
-				EB8DA53089D54FDD850B70AA /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TRand.cpp */,
-				11712E9A2A9C42FD8ED7DA95 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/xerifes.cpp */,
+				3FBF34B18BDF4C569F0A197C /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/1802925EFolioA_old.cpp */,
+				A753FA1DAB7C4422A04B5DE0 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/1802925EfolioA.cpp */,
+				E22548AE6FF542AAB2736D02 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/JogoDoGalo.cpp */,
+				E0D7EE937D274CF6804764A5 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/OitoDamas.cpp */,
+				06DB5A07A5194AC0A9692802 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/Particao.cpp */,
+				8223C40CC9394F7585F340C0 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/ProcuraEngine.cpp */,
+				44885E53583249E6983EC8AC /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/Puzzle8.cpp */,
+				761835E3B7C545319649764B /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraAdversa.cpp */,
+				DE2F506F1D484AB7AA0C6B1F /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraConstrutiva.cpp */,
+				14DD390E53A549139F7B30C8 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraConstrutivaComCiclos.cpp */,
+				3B2C10C28DBF49069E018623 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TProcuraMelhorativa.cpp */,
+				A3730151BDB24F238FCA25CB /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos/TRand.cpp */,
+				A4B96A4215414E6B96B98FB8 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/JogoDoGalo.cpp */,
+				725CEBD4A4D24B498FE7D312 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/OitoDamas.cpp */,
+				80651D5E4F0C4156A938B502 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/Particao.cpp */,
+				2BB706CE93CE44DBB7E90142 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/ProcuraEngine.cpp */,
+				27D3E7E02F22490EA40B8206 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/Puzzle8.cpp */,
+				CC4BD7A686B14B7F811BF4EB /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraAdversa.cpp */,
+				DA471F5E0A23417EAD1A28F8 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraConstrutiva.cpp */,
+				47FAB9DE18A746AD95AAD8DB /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraConstrutivaComCiclos.cpp */,
+				8BE16178327F4298BE27A9A2 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TProcuraMelhorativa.cpp */,
+				796DA95E46B146D9A7D3878F /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/TRand.cpp */,
+				7933B77D63594D9D920F18C3 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/xerife2.cpp */,
+				6884097C24B94C8F89D584B3 /* /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/xerifes.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0A772E4F26C149EEB006AA28 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7B3CCE6636D2407CAE4E0A57 /* 21071IIA */;
-			targetProxy = 6BB3E50F92A94BF8A3A93CCB /* PBXContainerItemProxy */;
-		};
-		1F3FD2F2DBC240D0B6241E3A /* PBXTargetDependency */ = {
+		2307DD377CD94F1C810E84D3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 102D674866AB4378AEC9796B /* ZERO_CHECK */;
-			targetProxy = 299E9BD815EB418DB21E30ED /* PBXContainerItemProxy */;
+			targetProxy = 5CBE7B5583354CC1A9ECB9F5 /* PBXContainerItemProxy */;
 		};
-		689E06F4DD5841D7B372B6BA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 14AFD6A9817A44DA8B51391D /* 21071IIA_SFML_xerifes */;
-			targetProxy = 5B77A78CECD44A9B8D21DE24 /* PBXContainerItemProxy */;
-		};
-		9EA299361E7E433C81AED5BF /* PBXTargetDependency */ = {
+		9A4C319E9858432280FED362 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 102D674866AB4378AEC9796B /* ZERO_CHECK */;
-			targetProxy = 4532F031768A4A098B0CCEB3 /* PBXContainerItemProxy */;
+			targetProxy = 6D8C20A75CC54DF09545A793 /* PBXContainerItemProxy */;
 		};
-		A758480B265348B791E7DC7B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 102D674866AB4378AEC9796B /* ZERO_CHECK */;
-			targetProxy = 85D44BE08799415793E905BC /* PBXContainerItemProxy */;
-		};
-		CE2DBD8B9AA74EE4A5431147 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 102D674866AB4378AEC9796B /* ZERO_CHECK */;
-			targetProxy = C0FD5DCFA2854A4FB5CC55EA /* PBXContainerItemProxy */;
-		};
-		ECEB8A5A80084999A5BBA9D7 /* PBXTargetDependency */ = {
+		9D2EB3AC7C094657985234BD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3AB5047FEF034E9598E2C098 /* 21071IIA_SFML */;
-			targetProxy = 3EEACA5FFF3B4611933CF677 /* PBXContainerItemProxy */;
+			targetProxy = 85666B1238234FF9B8464ADF /* PBXContainerItemProxy */;
+		};
+		A025A97B497B441698A8D233 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14AFD6A9817A44DA8B51391D /* 21071IIA_SFML_xerifes */;
+			targetProxy = B3907B738917406192BA8CE8 /* PBXContainerItemProxy */;
+		};
+		A8BC72A09E2E4EC59072122B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B3CCE6636D2407CAE4E0A57 /* 21071IIA */;
+			targetProxy = A01992197EE74BF69168D199 /* PBXContainerItemProxy */;
+		};
+		AC5603DDB8584692AE28C2EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 102D674866AB4378AEC9796B /* ZERO_CHECK */;
+			targetProxy = B447E456D3714F6AB396C624 /* PBXContainerItemProxy */;
+		};
+		AD6D5DC3277C43E0A126BEF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 102D674866AB4378AEC9796B /* ZERO_CHECK */;
+			targetProxy = E78449892C794765A1C140B1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		068F4218B6DB48499AD24568 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		08480A68EC5E4FC5BC7A3404 /* RelWithDebInfo */ = {
+		09CD1AEA19D14793A03B767F /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -744,7 +726,372 @@ exit 0";
 			};
 			name = RelWithDebInfo;
 		};
-		14A45C7EFDD84D9CBD89F926 /* MinSizeRel */ = {
+		115D6FBD8F4A44998907C1B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/Release";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/.","/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos","$(inherited)");
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = 21071IIA;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/build/21071IIA.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		1C401BFA2A3A4E18B08906FF /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/MinSizeRel";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/.","/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos","$(inherited)");
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = 21071IIA_SFML_xerifes;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/build/21071IIA_SFML_xerifes.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		2B8FC8D9FAFD4F628AD287D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		4A05C9BF63624CE5B81A1018 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/Debug";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/.","/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos","$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (/usr/local/lib,"$(inherited)");
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/usr/local/lib/libsfml-graphics.2.6.1.dylib","/usr/local/lib/libsfml-audio.2.6.1.dylib","/usr/local/lib/libsfml-window.2.6.1.dylib","/usr/local/lib/libsfml-system.2.6.1.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = 21071IIA_SFML;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/include,"$(inherited)");
+				TARGET_TEMP_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/build/21071IIA_SFML.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		548226142EA948848E56EE5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/Debug";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/.","/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos","$(inherited)");
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = 21071IIA_SFML_xerifes;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/build/21071IIA_SFML_xerifes.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		57759F2FA3944DB6981AD698 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/MinSizeRel";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/.","/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos","$(inherited)");
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++14' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = 21071IIA;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/build/21071IIA.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		6448FABDA41B4C2AB11FD706 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/build";
+			};
+			name = MinSizeRel;
+		};
+		650469079C3849C8948E828F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/Release";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/.","/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos","$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (/usr/local/lib,"$(inherited)");
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/usr/local/lib/libsfml-graphics.2.6.1.dylib","/usr/local/lib/libsfml-audio.2.6.1.dylib","/usr/local/lib/libsfml-window.2.6.1.dylib","/usr/local/lib/libsfml-system.2.6.1.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = 21071IIA_SFML;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/include,"$(inherited)");
+				TARGET_TEMP_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/build/21071IIA_SFML.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		90092CCE85134C31AC94EAE8 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/MinSizeRel";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/.","/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos","$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (/usr/local/lib,"$(inherited)");
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/usr/local/lib/libsfml-graphics.2.6.1.dylib","/usr/local/lib/libsfml-audio.2.6.1.dylib","/usr/local/lib/libsfml-window.2.6.1.dylib","/usr/local/lib/libsfml-system.2.6.1.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = 21071IIA_SFML;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/include,"$(inherited)");
+				TARGET_TEMP_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/build/21071IIA_SFML.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		9A84C57519CB4FFEAE8D5B3F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		9C125FE247DB4A258A0B6E29 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/RelWithDebInfo";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/.","/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos","$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (/usr/local/lib,"$(inherited)");
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/usr/local/lib/libsfml-graphics.2.6.1.dylib","/usr/local/lib/libsfml-audio.2.6.1.dylib","/usr/local/lib/libsfml-window.2.6.1.dylib","/usr/local/lib/libsfml-system.2.6.1.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = 21071IIA_SFML;
+				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/include,"$(inherited)");
+				TARGET_TEMP_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/build/21071IIA_SFML.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		9E6E5FF836304F63BC7E4295 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/RelWithDebInfo";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/.","/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos","$(inherited)");
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = 21071IIA_SFML_xerifes;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/build/21071IIA_SFML_xerifes.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		A1557E1149E041DD8DF329BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/build";
+			};
+			name = Release;
+		};
+		A58DDB12911C4225ACE3F5D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk;
+				SYMROOT = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/build";
+			};
+			name = Debug;
+		};
+		ADF5B834C7CE4BB2A87D2819 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/build";
+			};
+			name = RelWithDebInfo;
+		};
+		BEF0F86633774E6298C481E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		C2FF56C5E8D74718945B2476 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -766,66 +1113,7 @@ exit 0";
 			};
 			name = MinSizeRel;
 		};
-		28E6D211AA6941A7ABB7DC81 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk;
-				SYMROOT = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/build";
-			};
-			name = Debug;
-		};
-		35E7A2EC9A8A411F8520438E /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		388AD6D121904077A3CA68EF /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/MinSizeRel";
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/.","/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos","$(inherited)");
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = 21071IIA_SFML_xerifes;
-				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/build/21071IIA_SFML_xerifes.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		3CE9FC8A396C44E79C2BC907 /* MinSizeRel */ = {
+		D409D97DC36243898BEE1EAE /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -847,309 +1135,7 @@ exit 0";
 			};
 			name = MinSizeRel;
 		};
-		441D14619BFA4BB6BBF4B8CB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SYMROOT = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/build";
-			};
-			name = Release;
-		};
-		5564B58221CB4259A5420F72 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/Release";
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/.","/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos","$(inherited)");
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++14' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = 21071IIA;
-				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/build/21071IIA.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		5DA3BA2BC2274CA3B591213D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/Release";
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/.","/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos","$(inherited)");
-				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = (/usr/local/lib,"$(inherited)");
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/usr/local/lib/libsfml-graphics.2.6.1.dylib","/usr/local/lib/libsfml-audio.2.6.1.dylib","/usr/local/lib/libsfml-window.2.6.1.dylib","/usr/local/lib/libsfml-system.2.6.1.dylib","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = 21071IIA_SFML;
-				SECTORDER_FLAGS = "";
-				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/include,"$(inherited)");
-				TARGET_TEMP_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/build/21071IIA_SFML.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		647DA35CEAB948D39ED8F764 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/Release";
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/.","/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos","$(inherited)");
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = 21071IIA_SFML_xerifes;
-				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/build/21071IIA_SFML_xerifes.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		691925A9185E4F5B908C062F /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/MinSizeRel";
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/.","/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos","$(inherited)");
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++14' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = 21071IIA;
-				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/build/21071IIA.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		7784A0B4B1944BFF983CDDE2 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SYMROOT = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/build";
-			};
-			name = MinSizeRel;
-		};
-		81B143DE775745D29E423A2B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/Debug";
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/.","/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos","$(inherited)");
-				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = (/usr/local/lib,"$(inherited)");
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++17' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/usr/local/lib/libsfml-graphics.2.6.1.dylib","/usr/local/lib/libsfml-audio.2.6.1.dylib","/usr/local/lib/libsfml-window.2.6.1.dylib","/usr/local/lib/libsfml-system.2.6.1.dylib","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = 21071IIA_SFML;
-				SECTORDER_FLAGS = "";
-				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/include,"$(inherited)");
-				TARGET_TEMP_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/build/21071IIA_SFML.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		829E82762FFE4F5AB061FEDE /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/RelWithDebInfo";
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/.","/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos","$(inherited)");
-				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = (/usr/local/lib,"$(inherited)");
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++17' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/usr/local/lib/libsfml-graphics.2.6.1.dylib","/usr/local/lib/libsfml-audio.2.6.1.dylib","/usr/local/lib/libsfml-window.2.6.1.dylib","/usr/local/lib/libsfml-system.2.6.1.dylib","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = 21071IIA_SFML;
-				SECTORDER_FLAGS = "";
-				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/include,"$(inherited)");
-				TARGET_TEMP_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/build/21071IIA_SFML.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		89E7B69FB69A4045A1BA1FA2 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/MinSizeRel";
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/.","/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos","$(inherited)");
-				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = (/usr/local/lib,"$(inherited)");
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/usr/local/lib/libsfml-graphics.2.6.1.dylib","/usr/local/lib/libsfml-audio.2.6.1.dylib","/usr/local/lib/libsfml-window.2.6.1.dylib","/usr/local/lib/libsfml-system.2.6.1.dylib","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = 21071IIA_SFML;
-				SECTORDER_FLAGS = "";
-				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/include,"$(inherited)");
-				TARGET_TEMP_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/build/21071IIA_SFML.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		8AB0E18D7563494BA933935A /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/RelWithDebInfo";
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/.","/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos","$(inherited)");
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++17' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = 21071IIA_SFML_xerifes;
-				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/build/21071IIA_SFML_xerifes.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		AF3C93A0C782401DA6428AF8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		B95BAC70E2CC4EA8A79D87FE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/Debug";
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/.","/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos","$(inherited)");
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++17' ";
-				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = 21071IIA_SFML_xerifes;
-				SECTORDER_FLAGS = "";
-				TARGET_TEMP_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/build/21071IIA_SFML_xerifes.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		C8F51DEA35EB4ED8B028217D /* Debug */ = {
+		D4E96DB4288042E4A5D3B8C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1177,7 +1163,7 @@ exit 0";
 			};
 			name = Debug;
 		};
-		D1CEAB964E3E4BFEBBD199E2 /* RelWithDebInfo */ = {
+		DC4E80E6C2384039A3355C23 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1199,7 +1185,7 @@ exit 0";
 			};
 			name = RelWithDebInfo;
 		};
-		E43F7B9547874883B1623EF4 /* Release */ = {
+		E24A4C4A972C494D88E693A5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1214,24 +1200,14 @@ exit 0";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = ("","$(inherited)");
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
+				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = Release;
 		};
-		EA3764FF5B70491D964A024F /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SYMROOT = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/build";
-			};
-			name = RelWithDebInfo;
-		};
-		EC8A73860DAB4FF1B8E6AF39 /* Debug */ = {
+		ECC93EE809904C3C8A149788 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1246,78 +1222,106 @@ exit 0";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = ("","$(inherited)");
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
+				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = Debug;
 		};
+		F8F1137BB2C147F5B4461D47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/Release";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/.","/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos","$(inherited)");
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = 21071IIA_SFML_xerifes;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release/build/21071IIA_SFML_xerifes.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4EA74F5A609F4F6297A6E67D /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+		0BFCD3DFADA74AAE8AFEAE92 /* Build configuration list for PBXNativeTarget "21071IIA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EC8A73860DAB4FF1B8E6AF39 /* Debug */,
-				E43F7B9547874883B1623EF4 /* Release */,
-				14A45C7EFDD84D9CBD89F926 /* MinSizeRel */,
-				D1CEAB964E3E4BFEBBD199E2 /* RelWithDebInfo */,
+				D4E96DB4288042E4A5D3B8C0 /* Debug */,
+				115D6FBD8F4A44998907C1B9 /* Release */,
+				57759F2FA3944DB6981AD698 /* MinSizeRel */,
+				09CD1AEA19D14793A03B767F /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		772093EB0F3548178582368C /* Build configuration list for PBXNativeTarget "21071IIA_SFML_xerifes" */ = {
+		52F98433EFB6476C84F446F5 /* Build configuration list for PBXNativeTarget "21071IIA_SFML" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B95BAC70E2CC4EA8A79D87FE /* Debug */,
-				647DA35CEAB948D39ED8F764 /* Release */,
-				388AD6D121904077A3CA68EF /* MinSizeRel */,
-				8AB0E18D7563494BA933935A /* RelWithDebInfo */,
+				4A05C9BF63624CE5B81A1018 /* Debug */,
+				650469079C3849C8948E828F /* Release */,
+				90092CCE85134C31AC94EAE8 /* MinSizeRel */,
+				9C125FE247DB4A258A0B6E29 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		950FBAA0740C4E0098663A68 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+		8A3A379F73DF41AFBE1B704B /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				068F4218B6DB48499AD24568 /* Debug */,
-				AF3C93A0C782401DA6428AF8 /* Release */,
-				3CE9FC8A396C44E79C2BC907 /* MinSizeRel */,
-				35E7A2EC9A8A411F8520438E /* RelWithDebInfo */,
+				ECC93EE809904C3C8A149788 /* Debug */,
+				E24A4C4A972C494D88E693A5 /* Release */,
+				D409D97DC36243898BEE1EAE /* MinSizeRel */,
+				9A84C57519CB4FFEAE8D5B3F /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		9707DE526B6747F29FD8A3B4 /* Build configuration list for PBXNativeTarget "21071IIA_SFML" */ = {
+		AA46B7AC3CE74965B9981A7E /* Build configuration list for PBXNativeTarget "21071IIA_SFML_xerifes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				81B143DE775745D29E423A2B /* Debug */,
-				5DA3BA2BC2274CA3B591213D /* Release */,
-				89E7B69FB69A4045A1BA1FA2 /* MinSizeRel */,
-				829E82762FFE4F5AB061FEDE /* RelWithDebInfo */,
+				548226142EA948848E56EE5F /* Debug */,
+				F8F1137BB2C147F5B4461D47 /* Release */,
+				1C401BFA2A3A4E18B08906FF /* MinSizeRel */,
+				9E6E5FF836304F63BC7E4295 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		B81B1476EF724F0E9A281B5E /* Build configuration list for PBXProject "21071IIA" */ = {
+		CFB348F1EF5F440092D8D23A /* Build configuration list for PBXProject "21071IIA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				28E6D211AA6941A7ABB7DC81 /* Debug */,
-				441D14619BFA4BB6BBF4B8CB /* Release */,
-				7784A0B4B1944BFF983CDDE2 /* MinSizeRel */,
-				EA3764FF5B70491D964A024F /* RelWithDebInfo */,
+				A58DDB12911C4225ACE3F5D2 /* Debug */,
+				A1557E1149E041DD8DF329BE /* Release */,
+				6448FABDA41B4C2AB11FD706 /* MinSizeRel */,
+				ADF5B834C7CE4BB2A87D2819 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		CDF5F0A06A954BDB9119447A /* Build configuration list for PBXNativeTarget "21071IIA" */ = {
+		F9729D76893941D8B83C1C43 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C8F51DEA35EB4ED8B028217D /* Debug */,
-				5564B58221CB4259A5420F72 /* Release */,
-				691925A9185E4F5B908C062F /* MinSizeRel */,
-				08480A68EC5E4FC5BC7A3404 /* RelWithDebInfo */,
+				BEF0F86633774E6298C481E4 /* Debug */,
+				2B8FC8D9FAFD4F628AD287D3 /* Release */,
+				C2FF56C5E8D74718945B2476 /* MinSizeRel */,
+				DC4E80E6C2384039A3355C23 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

@@ -51,7 +51,8 @@ add_executable(21071IIA
         xerifes.cpp
         1802925EfolioA.cpp
         ../../../../../../../Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h
-        ../../../../../../../Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h)
+        ../../../../../../../Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/operations.h
+        xerife2.cpp)
 
 cmake_minimum_required(VERSION 3.10)
 project(21071IIA)

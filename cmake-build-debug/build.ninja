@@ -210,6 +210,13 @@ build CMakeFiles/21071IIA.dir/1802925EfolioA.cpp.o: CXX_COMPILER__21071IIA_unsca
   OBJECT_DIR = CMakeFiles/21071IIA.dir
   OBJECT_FILE_DIR = CMakeFiles/21071IIA.dir
 
+build CMakeFiles/21071IIA.dir/xerife2.cpp.o: CXX_COMPILER__21071IIA_unscanned_Debug /Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/xerife2.cpp || cmake_object_order_depends_target_21071IIA
+  DEP_FILE = CMakeFiles/21071IIA.dir/xerife2.cpp.o.d
+  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/. -I/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/DiogoAlgoritmos
+  OBJECT_DIR = CMakeFiles/21071IIA.dir
+  OBJECT_FILE_DIR = CMakeFiles/21071IIA.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 21071IIA
@@ -218,7 +225,7 @@ build CMakeFiles/21071IIA.dir/1802925EfolioA.cpp.o: CXX_COMPILER__21071IIA_unsca
 #############################################
 # Link the executable 21071IIA
 
-build 21071IIA: CXX_EXECUTABLE_LINKER__21071IIA_Debug CMakeFiles/21071IIA.dir/DiogoAlgoritmos/JogoDoGalo.cpp.o CMakeFiles/21071IIA.dir/DiogoAlgoritmos/OitoDamas.cpp.o CMakeFiles/21071IIA.dir/DiogoAlgoritmos/Particao.cpp.o CMakeFiles/21071IIA.dir/DiogoAlgoritmos/ProcuraEngine.cpp.o CMakeFiles/21071IIA.dir/DiogoAlgoritmos/Puzzle8.cpp.o CMakeFiles/21071IIA.dir/DiogoAlgoritmos/TProcuraAdversa.cpp.o CMakeFiles/21071IIA.dir/DiogoAlgoritmos/TProcuraConstrutiva.cpp.o CMakeFiles/21071IIA.dir/DiogoAlgoritmos/TProcuraConstrutivaComCiclos.cpp.o CMakeFiles/21071IIA.dir/DiogoAlgoritmos/TProcuraMelhorativa.cpp.o CMakeFiles/21071IIA.dir/DiogoAlgoritmos/TRand.cpp.o CMakeFiles/21071IIA.dir/1802925EFolioA_old.cpp.o CMakeFiles/21071IIA.dir/JogoDoGalo.cpp.o CMakeFiles/21071IIA.dir/OitoDamas.cpp.o CMakeFiles/21071IIA.dir/Particao.cpp.o CMakeFiles/21071IIA.dir/ProcuraEngine.cpp.o CMakeFiles/21071IIA.dir/Puzzle8.cpp.o CMakeFiles/21071IIA.dir/TProcuraAdversa.cpp.o CMakeFiles/21071IIA.dir/TProcuraConstrutiva.cpp.o CMakeFiles/21071IIA.dir/TProcuraConstrutivaComCiclos.cpp.o CMakeFiles/21071IIA.dir/TProcuraMelhorativa.cpp.o CMakeFiles/21071IIA.dir/TRand.cpp.o CMakeFiles/21071IIA.dir/xerifes.cpp.o CMakeFiles/21071IIA.dir/1802925EfolioA.cpp.o
+build 21071IIA: CXX_EXECUTABLE_LINKER__21071IIA_Debug CMakeFiles/21071IIA.dir/DiogoAlgoritmos/JogoDoGalo.cpp.o CMakeFiles/21071IIA.dir/DiogoAlgoritmos/OitoDamas.cpp.o CMakeFiles/21071IIA.dir/DiogoAlgoritmos/Particao.cpp.o CMakeFiles/21071IIA.dir/DiogoAlgoritmos/ProcuraEngine.cpp.o CMakeFiles/21071IIA.dir/DiogoAlgoritmos/Puzzle8.cpp.o CMakeFiles/21071IIA.dir/DiogoAlgoritmos/TProcuraAdversa.cpp.o CMakeFiles/21071IIA.dir/DiogoAlgoritmos/TProcuraConstrutiva.cpp.o CMakeFiles/21071IIA.dir/DiogoAlgoritmos/TProcuraConstrutivaComCiclos.cpp.o CMakeFiles/21071IIA.dir/DiogoAlgoritmos/TProcuraMelhorativa.cpp.o CMakeFiles/21071IIA.dir/DiogoAlgoritmos/TRand.cpp.o CMakeFiles/21071IIA.dir/1802925EFolioA_old.cpp.o CMakeFiles/21071IIA.dir/JogoDoGalo.cpp.o CMakeFiles/21071IIA.dir/OitoDamas.cpp.o CMakeFiles/21071IIA.dir/Particao.cpp.o CMakeFiles/21071IIA.dir/ProcuraEngine.cpp.o CMakeFiles/21071IIA.dir/Puzzle8.cpp.o CMakeFiles/21071IIA.dir/TProcuraAdversa.cpp.o CMakeFiles/21071IIA.dir/TProcuraConstrutiva.cpp.o CMakeFiles/21071IIA.dir/TProcuraConstrutivaComCiclos.cpp.o CMakeFiles/21071IIA.dir/TProcuraMelhorativa.cpp.o CMakeFiles/21071IIA.dir/TRand.cpp.o CMakeFiles/21071IIA.dir/xerifes.cpp.o CMakeFiles/21071IIA.dir/1802925EfolioA.cpp.o CMakeFiles/21071IIA.dir/xerife2.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk
   OBJECT_DIR = CMakeFiles/21071IIA.dir
   POST_BUILD = :
