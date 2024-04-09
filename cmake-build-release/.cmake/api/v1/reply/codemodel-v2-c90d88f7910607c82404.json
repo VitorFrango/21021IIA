@@ -1,0 +1,336 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "21071IIA",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "21071IIA::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-21071IIA-Debug-a4b3c094a1056896bd4e.json",
+					"name" : "21071IIA",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "21071IIA_SFML::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-21071IIA_SFML-Debug-2d51e872f0100f2e89f1.json",
+					"name" : "21071IIA_SFML",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "21071IIA_SFML_xerifes::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-21071IIA_SFML_xerifes-Debug-4c86af16488077c4afc9.json",
+					"name" : "21071IIA_SFML_xerifes",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Debug-eb7ada1371acbc46b8d0.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Debug-1f9c6f1a78350b3b4df3.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "21071IIA",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "21071IIA::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-21071IIA-Release-96478604b54187a4607e.json",
+					"name" : "21071IIA",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "21071IIA_SFML::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-21071IIA_SFML-Release-fc0794bb5e5e6570a72b.json",
+					"name" : "21071IIA_SFML",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "21071IIA_SFML_xerifes::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-21071IIA_SFML_xerifes-Release-94a6d33e5083fa8170a6.json",
+					"name" : "21071IIA_SFML_xerifes",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Release-eb7ada1371acbc46b8d0.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Release-1f9c6f1a78350b3b4df3.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-MinSizeRel-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "MinSizeRel",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "21071IIA",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "21071IIA::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-21071IIA-MinSizeRel-e69fa77ea26ca9a67eb7.json",
+					"name" : "21071IIA",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "21071IIA_SFML::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-21071IIA_SFML-MinSizeRel-d5d8ab986485eb403031.json",
+					"name" : "21071IIA_SFML",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "21071IIA_SFML_xerifes::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-21071IIA_SFML_xerifes-MinSizeRel-d2812cf91e6c7d99fe4d.json",
+					"name" : "21071IIA_SFML_xerifes",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-eb7ada1371acbc46b8d0.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-MinSizeRel-1f9c6f1a78350b3b4df3.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-RelWithDebInfo-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "21071IIA",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "21071IIA::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-21071IIA-RelWithDebInfo-566f38da08d697b841a1.json",
+					"name" : "21071IIA",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "21071IIA_SFML::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-21071IIA_SFML-RelWithDebInfo-86c079e6861b4809e1af.json",
+					"name" : "21071IIA_SFML",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "21071IIA_SFML_xerifes::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-21071IIA_SFML_xerifes-RelWithDebInfo-7683de173d53738c882c.json",
+					"name" : "21071IIA_SFML_xerifes",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-eb7ada1371acbc46b8d0.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-RelWithDebInfo-1f9c6f1a78350b3b4df3.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA/cmake-build-release",
+		"source" : "/Users/vitorfrango/Library/CloudStorage/OneDrive-Personal/programacao/21071IIA"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
