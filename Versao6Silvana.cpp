@@ -3,11 +3,10 @@
 #include <queue>
 #include <iomanip>
 #include <chrono> // Para medir o tempo
-#include <sstream> // Para otimizar a impressão
 
-const int LARGURA_MAXIMA = 13;
+const int LARGURA_MAXIMA = 20;
 const int NUM_INSTANCIAS = 10;
-//const int VERBA_DISPONIVEL = 12;
+const int VERBA_DISPONIVEL = 12;
 
 struct Instancia {
     int N, M, Verba, ProtegerA, ProtegerB;
@@ -150,186 +149,156 @@ const std::array<std::array<std::array<int, LARGURA_MAXIMA>, LARGURA_MAXIMA>, NU
                                                                                                        }};
 
 class CMapa {
+private:
     int mapa[LARGURA_MAXIMA][LARGURA_MAXIMA];
-    bool protecao[LARGURA_MAXIMA][LARGURA_MAXIMA];  // Nova matriz para rastrear proteção
+    bool protecao[LARGURA_MAXIMA][LARGURA_MAXIMA];  // To track protection
     Instancia instancia;
-    Estado melhorEstado;
 
 public:
-    CMapa(int id) : instancia(instancias[id - 1]) {
+    explicit CMapa(int id) : instancia(instancias[id - 1]) {
         inicializarMapa(id - 1);
     }
 
-    std::vector<Estado> gerarSucessores(const Estado &estado) {
+    void inicializarMapa(int id) {
+        for (int i = 0; i < instancia.N; ++i) {
+            for (int j = 0; j < instancia.M; ++j) {
+                mapa[i][j] = mapas[id][i][j];
+                protecao[i][j] = false;  // Initializing protection tracking
+            }
+        }
+    }
+
+    int calcularRaio(int deputados) {
+        if (deputados == 0) return 1;
+        if (deputados == 1) return 2;
+        if (deputados == 5) return 3;
+        if (deputados == 13) return 4;
+        return 1;  // Default case
+    }
+
+    std::vector<Estado> gerarSucessores(Estado estado) {
         std::vector<Estado> sucessores;
-        for (int x = 0; x < instancia.N; x++) {
-            for (int y = 0; y < instancia.M; y++) {
-                int maxDeputados = (instancia.Verba - 4) - estado.custo;  // Limitando os deputados com base no custo restante
-                for (int deputados = 0; deputados <= maxDeputados; deputados++) {
-                    int raio = calcularRaio(deputados);
-                    int familiasProtegidas = 0;
-
-                    for (int i = std::max(0, x - raio); i <= std::min(x + raio, instancia.N - 1); ++i) {
-                        for (int j = std::max(0, y - raio); j <= std::min(y + raio, instancia.M - 1); ++j) {
-                            familiasProtegidas += mapa[i][j];
-                        }
-                    }
-
-                    int custo = 4 + deputados + estado.custo;
-                    if (custo <= instancia.Verba) {
-                        Estado novoEstado = {x, y, deputados, familiasProtegidas, custo, estado.numDelegacias + 1, false, estado.geracao + 1};
-                        sucessores.push_back(novoEstado);
-                    }
+        // For each possible position (x, y) in the map:
+        for (int x = 0; x < LARGURA_MAXIMA; ++x) {
+            for (int y = 0; y < LARGURA_MAXIMA; ++y) {
+                // If the position is valid for placing a deputy:
+                if (x >= 0 && x < instancia.N && y >= 0 && y < instancia.M && mapa[x][y] == 0 && estado.custo + calcularRaio <= instancia.Verba) {
+                    // Create a new `Estado` with the new position and updated values.
+                    Estado novoEstado = estado;
+                    novoEstado.x = x;
+                    novoEstado.y = y;
+                    novoEstado.custo += deputados; // assuming COST_OF_DEPUTY is the cost to place a deputy
+                    // Add the new `Estado` to `sucessores`.
+                    sucessores.push_back(novoEstado);
                 }
             }
         }
         return sucessores;
     }
 
-
-
     void BFS(int objetivoProtecao) {
         auto inicio = std::chrono::high_resolution_clock::now();
         std::queue<Estado> fila;
-        Estado estadoInicial = {0, 0, 0, 0, 0, 0, true, 0}; // Custos e delegacias ajustados, considerado inicialmente como válido
+        Estado estadoInicial = {0, 0, 0, 0, 4, 1, false, 0};
         fila.push(estadoInicial);
         int numExpansoes = 0;
-        Estado melhorEstado = estadoInicial; // Inicializa o melhor estado como o estado inicial
+        bool tempoExcedido = false;
 
-        while (!fila.empty()) {
+        while (!fila.empty() && !tempoExcedido) {
+            auto agora = std::chrono::high_resolution_clock::now();
+            std::chrono::duration<double, std::milli> tempo_gasto = agora - inicio;
+            double tempo_gasto_s = tempo_gasto.count() / 1000.0; // Convertendo para segundos
+
+            if (tempo_gasto.count() > 60000) { // Checa se excedeu 1 minuto (60.000 milissegundos)
+                tempoExcedido = true;
+                // break; // Encerra o loop se o tempo limite for excedido
+            }
+
             Estado atual = fila.front();
             fila.pop();
 
-            // Atualização da melhor solução
-            if (atual.familiasProtegidas > melhorEstado.familiasProtegidas ||
-                (atual.familiasProtegidas == melhorEstado.familiasProtegidas && atual.custo < melhorEstado.custo)) {
-                melhorEstado = atual;
-            }
-
-            if (atual.familiasProtegidas >= objetivoProtecao) {
-                melhorEstado = atual; // Atualiza o melhor estado se uma solução foi encontrada
-                break; // Encerra se a proteção desejada foi alcançada
+            if (atual.familiasProtegidas >= objetivoProtecao && atual.custo <= instancia.Verba) {
+                atual.solucaoValida = true;
+                calcularEImprimir(atual, numExpansoes, tempo_gasto_s, atual.geracao);
+                break;  // Add this line to stop as soon as a valid solution is found.
             }
 
             auto sucessores = gerarSucessores(atual);
-            for (const Estado &sucessor: sucessores) {
-                fila.push(sucessor);
-
-
+            for (const Estado& sucessor : sucessores) {
+                Estado novoSucessor = sucessor;
+                novoSucessor.geracao = atual.geracao + 1; // Incrementando a geração
+                fila.push(novoSucessor);
             }
-
-            numExpansoes += sucessores.size();
-
-            // Verificação do limite de tempo
-            auto agora = std::chrono::high_resolution_clock::now();
-            std::chrono::duration<double, std::milli> tempo_gasto = agora - inicio;
-            if (tempo_gasto.count() > 60000) { // Limite de tempo
-                break; // Encerra se o tempo excedeu
-            }
+            numExpansoes += sucessores.size(); // Contando as expansões
         }
 
-        // Após sair do loop, imprimir o melhor estado
-        auto fim = std::chrono::high_resolution_clock::now();
-        std::chrono::duration<double, std::milli> tempo_gasto = fim - inicio;
-        calcularEImprimir(melhorEstado, numExpansoes, tempo_gasto.count() / 1000.0, melhorEstado.geracao, "Resumo após o término:");
+        if (tempoExcedido) {
+            std::cout << "Tempo limite de 1 minuto excedido." << std::endl;
+        }
     }
 
 
-    void inicializarMapa(int id) {
-        for (int i = 0; i < LARGURA_MAXIMA; i++) {
-            for (int j = 0; j < LARGURA_MAXIMA; j++) {
-                protecao[i][j] = false;  // Inicializa a matriz de proteção
-                if (i < instancia.N && j < instancia.M) {
-                    mapa[i][j] = mapas[id][i][j];
+
+    // Método para calcular e imprimir as informações e o mapa
+    void calcularEImprimir(const Estado& estado, int numExpansoes, double tempoGasto, int geracao) {
+    int raio = calcularRaio(estado.deputados);
+       // bool solucaoValida = (estado.familiasProtegidas >= instancia.ProtegerA) && (estado.custo <= instancia.Verba);
+
+        // Reset da matriz de proteção
+        for (int i = 0; i < LARGURA_MAXIMA; ++i) {
+            std::fill_n(protecao[i], LARGURA_MAXIMA, false);
+        }
+
+        // Calcular famílias protegidas e marcar zonas de proteção
+        int familiasProtegidasCalc = 0;
+        for (int i = std::max(0, estado.x - raio); i <= std::min(estado.x + raio, instancia.N - 1); ++i) {
+            for (int j = std::max(0, estado.y - raio); j <= std::min(estado.y + raio, instancia.M - 1); ++j) {
+                if (mapa[i][j] > 0) {
+                    familiasProtegidasCalc += mapa[i][j];
+                    protecao[i][j] = true;
+                }
+            }
+        }
+
+        // Verifica se a solução atende aos requisitos após o cálculo correto das famílias protegidas.
+        bool solucaoValida = (familiasProtegidasCalc >= instancia.ProtegerA) && (estado.custo <= instancia.Verba);
+
+        // Imprimir o mapa e outras informações
+        std::cout << "Mapa com a delegacia e raio de proteção:\n";
+        for (int i = 0; i < instancia.N; ++i) {
+            for (int j = 0; j < instancia.M; ++j) {
+                std::cout << std::setw(2) << mapa[i][j];
+                if (i == estado.x && j == estado.y) {
+                    std::cout << "D";
+                } else if (protecao[i][j]) {
+                    std::cout << "!";
                 } else {
-                    mapa[i][j] = 0;
+                    std::cout << " ";
                 }
+                std::cout << " ";
             }
+            std::cout << std::endl;
         }
+
+        std::cout << "\nFamílias protegidas: " << familiasProtegidasCalc << "/" << instancia.ProtegerA << "\n";
+        std::cout << "Custo total: " << estado.custo << " moedas de ouro\n";
+        std::cout << "Dinheiro disponível: " << instancia.Verba - estado.custo << "\n";
+        std::cout << "Número de deputados colocados: " << estado.deputados << "\n";
+        std::cout << "Número de delegacias: " << estado.numDelegacias << "\n";
+        std::cout << "Número de expansões: " << numExpansoes << std::endl;
+        std::cout << "Geração: " << geracao << std::endl;
+        std::cout << "Tempo gasto: " << tempoGasto << " segundos" << std::endl;
+
+        if (solucaoValida) {
+            std::cout << "Solução válida: Sim\n";
+        } else {
+            std::cout << "Solução válida: Não\n";
+        }
+        std::cout << std::endl;
     }
-
-    // Método para calcular o raio de proteção
-    int calcularRaio(int deputados) {
-        switch (deputados) {
-            case 0:
-                return 1;
-            case 1:
-                return 2;
-            case 5:
-                return 3;
-            case 13:
-                return 4;
-            default:
-                return 1; // caso padrão para apenas o xerife
-        }
-    }
-
-    // Método para calcular e imprimir as informações e o mapa
-    // Método para calcular e imprimir as informações e o mapa
-    void calcularEImprimir(const Estado &estado, int numExpansoes, double tempoGasto, int geracao, const std::string& mensagem) {
-        std::ostringstream output;
-
-        if (estado.solucaoValida) {
-            output << "Mapa com a delegacia e áreas protegidas:\n";
-
-            // Inicializa uma cópia do mapa para marcar proteções e delegacia
-            int mapaVisual[LARGURA_MAXIMA][LARGURA_MAXIMA];
-            for (int i = 0; i < instancia.N; ++i) {
-                for (int j = 0; j < instancia.M; ++j) {
-                    mapaVisual[i][j] = mapa[i][j];
-                }
-            }
-
-            // Marca a delegacia no mapa
-            mapaVisual[estado.x][estado.y] = -1; // -1 denota a delegacia
-
-            // Marca as áreas protegidas no mapa
-            int raio = calcularRaio(estado.deputados);
-            for (int i = std::max(0, estado.x - raio); i <= std::min(instancia.N - 1, estado.x + raio); ++i) {
-                for (int j = std::max(0, estado.y - raio); j <= std::min(instancia.M - 1, estado.y + raio); ++j) {
-                    if (mapaVisual[i][j] >= 0) { // Apenas marca se não for a delegacia
-                        mapaVisual[i][j] = -2; // -2 denota área protegida
-                    }
-                }
-            }
-
-            // Imprime o mapa
-            for (int i = 0; i < instancia.N; ++i) {
-                for (int j = 0; j < instancia.M; ++j) {
-                    if (mapaVisual[i][j] == -1) {
-                        output << "D "; // Delegacia
-                    } else if (mapaVisual[i][j] == -2) {
-                        output << "* "; // Área protegida
-                    } else {
-                        output << ". "; // Área não protegida
-                    }
-                }
-                output << "\n";
-            }
-        }
-
-        output << mensagem << "\n";
-
-        if (estado.solucaoValida || (!estado.solucaoValida && geracao > 0)) {
-            output << "\nFamílias protegidas: " << estado.familiasProtegidas << "/" << instancia.ProtegerA
-                   << "\nCusto total: " << estado.custo << " moedas de ouro\n"
-                   << "Número de deputados colocados: " << estado.deputados << "\n"
-                   << "Número de delegacias: " << estado.numDelegacias << "\n"
-                   << "Número de expansões: " << numExpansoes << "\n"
-                   << "Geração: " << geracao << "\n"
-                   << "Tempo gasto: " << tempoGasto << " segundos\n";
-        }
-
-        std::cout << output.str();
-    }
-
-
-
-
 };
 
-
-    int main() {
+int main() {
     for (int id = 1; id <= NUM_INSTANCIAS; id++) {
         std::cout << "Instancia " << id << " - ProtegerA:\n";
         CMapa mapaA(id);
