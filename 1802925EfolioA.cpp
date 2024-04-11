@@ -155,15 +155,15 @@ void instancias(int instancia_id, const vector<vector<int>>& map, int budget, in
     cout << "----------------------------------------" << endl;
 
     // Estrutura para armazenar o estado do último estado processado
-    Estado last_state;
-    for (int min_familias : {min_familiasA, min_familiasB}) {
-        bool solution_found = false;
-        int num_expansoes = 0;
-        int num_geracoes = 0;
+        Estado last_state;
+        for (int min_familias : {min_familiasA, min_familiasB}) {
+            bool solution_found = false;
+            int num_expansoes = 0;
+            int num_geracoes = 0;
 
-        // fila de prioridade para os estados
-        priority_queue<Estado, vector<Estado>, greater<Estado>> pq;
-        pq.push(Estado());
+            // fila de prioridade para os estados
+            priority_queue<Estado, vector<Estado>, greater<Estado>> pq;
+            pq.push(Estado());
 
         while (!pq.empty()) {
             auto current_duration = duration_cast<microseconds>(high_resolution_clock::now() - start);
