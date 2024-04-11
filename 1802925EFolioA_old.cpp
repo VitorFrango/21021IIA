@@ -1,11 +1,3 @@
-/*
-// Created by Vitor Frango on 06/04/2024.
-
- O código implementa um algoritmo de busca de custo uniforme. Esse algoritmo expande, no espaço de busca,
- o nó de menor custo de caminho desde a origem, o que garante que o primeiro nó a atingir o objetivo seja
- o de caminho mais curto (ou de menor custo), caso exista um caminho até o objetivo. É um algoritmo completo
- e otimizado
-*/
 
 
 #include <iostream>
