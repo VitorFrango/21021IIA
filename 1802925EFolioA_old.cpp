@@ -132,7 +132,7 @@ void imprime_mapa(const vector<vector<int>>& map, const Estado& Estado, int budg
     // Calcula o total de familias protegidas e o custo total
     int total_Protegida = calcular_familas_protegidas(map, Estado);
 
-    cout << "\nFamílias protegidas: " << Estado.familas_protegidas << "/" << total_Protegida << endl;
+    //cout << "\nFamílias protegidas: " << Estado.familas_protegidas << "/" << total_Protegida << endl;
     cout << "Custo total: " << Estado.cost << " moedas de ouro" << endl;
     int moedas_restantes = budget - Estado.cost;
     cout << "Moedas restantes: " << moedas_restantes << " moedas de ouro" << endl;
@@ -140,7 +140,7 @@ void imprime_mapa(const vector<vector<int>>& map, const Estado& Estado, int budg
                                    [](int acc, const tuple<int, int, int>& Delegacao) {
                                        return acc + get<2>(Delegacao); });
     cout << "Número de deputados: " << num_deputados << endl;
-    cout << "Número de delegacias colocadas: " << Estado.delegacoes.size() << endl;
+    cout << "Número de delegacias: " << Estado.delegacoes.size() << endl;
 }
 
 // Função para processar as instâncias do problema tentando encontrar uma solução dentro do tempo limite
@@ -156,7 +156,7 @@ void instancias(int instancia_id, const vector<vector<int>>& map, int budget, in
 
     // Estrutura para armazenar o estado do último estado processado
     Estado last_state;
-    for (int min_families : {min_familiasA, min_familiasB}) {
+    for (int min_familias : {min_familiasA, min_familiasB}) {
         bool solution_found = false;
         int num_expansoes = 0;
         int num_geracoes = 0;
@@ -166,14 +166,14 @@ void instancias(int instancia_id, const vector<vector<int>>& map, int budget, in
 
         while (!q.empty()) {
             auto current_duration = duration_cast<microseconds>(high_resolution_clock::now() - start);
-            if (current_duration.count() > 60000000) break;
+            if (current_duration.count() > 60000000) break; // Tempo limite de 60 segundos
 
             Estado currente_Estado = q.front();
             q.pop();
             last_state = currente_Estado;
             num_expansoes++;
 
-            if (currente_Estado.familas_protegidas >= min_families) {
+            if (currente_Estado.familas_protegidas >= min_familias) {
                 solution_found = true;
                 break;
             }
@@ -190,8 +190,10 @@ void instancias(int instancia_id, const vector<vector<int>>& map, int budget, in
         auto duration = duration_cast<microseconds>(high_resolution_clock::now() - start);
 
         // Detalhes adicionais sobre o resultado
-        cout << "Minimo de familias protegidas necessárias: " << min_families << endl;
+        cout << "----------------------------------------" << endl;
+        cout << "Familias protegidas necessárias: " << min_familias << endl;
         cout << "Famílias protegidas alcançadas: " << last_state.familas_protegidas << endl;
+        cout << "----------------------------------------" << endl;
         cout << "Custo total: " << last_state.cost << " moedas de ouro" << endl;
         cout << "Moedas restantes: " << (budget - last_state.cost) << " moedas de ouro" << endl;
         // Calcula o número de deputados e delegacias colocadas
@@ -199,12 +201,14 @@ void instancias(int instancia_id, const vector<vector<int>>& map, int budget, in
                                        [](int acc, const tuple<int, int, int>& Delegacao) {
                                            return acc + get<2>(Delegacao);
                                        });
+        cout << "----------------------------------------" << endl;
         cout << "Número de deputados: " << num_deputados << endl;
         cout << "Número de delegacias colocadas: " << last_state.delegacoes.size() << endl;
+        cout << "----------------------------------------" << endl;
 
         if (solution_found) {
             cout << "Resultado: Solução encontrada." << endl;
-        } else if (duration.count() > 60000) { // define o tempo limite de 60 segundos
+        } else if (duration.count() > 60000000) { // define o tempo limite de 60 segundos
             cout << "Resultado: Não resolvido (tempo excedido)." << endl;
         } else {
             cout << "Resultado: Impossível." << endl;
@@ -213,7 +217,7 @@ void instancias(int instancia_id, const vector<vector<int>>& map, int budget, in
         cout << "Número de expansões: " << num_expansoes << endl;
         cout << "Número de gerações: " << num_geracoes << endl;
         // Imprime o tempo gasto em microssegundos e converte para segundos
-        cout << "Tempo gasto: " << fixed << setprecision(6) << duration.count() / 1000000.0 << " segundos." << endl;
+        cout << "Tempo gasto: " << fixed << setprecision(6) << duration.count()  << " msec." << endl;
         cout << "----------------------------------------" << endl;
     }
 }

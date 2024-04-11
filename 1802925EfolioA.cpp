@@ -155,23 +155,21 @@ void instancias(int instancia_id, const vector<vector<int>>& map, int budget, in
     cout << "----------------------------------------" << endl;
 
     // Estrutura para armazenar o estado do último estado processado
-        Estado last_state;
-        for (int min_familias : {min_familiasA, min_familiasB}) {
-            bool solution_found = false;
-            int num_expansoes = 0;
-            int num_geracoes = 0;
+    Estado last_state;
+    for (int min_familias : {min_familiasA, min_familiasB}) {
+        bool solution_found = false;
+        int num_expansoes = 0;
+        int num_geracoes = 0;
 
-            // fila de prioridade para os estados
-            priority_queue<Estado, vector<Estado>, greater<Estado>> pq;
-            pq.push(Estado());
+        queue<Estado> q;
+        q.push(Estado());
 
-        while (!pq.empty()) {
+        while (!q.empty()) {
             auto current_duration = duration_cast<microseconds>(high_resolution_clock::now() - start);
-            if (current_duration.count() > 60000000) break; // define o tempo limite de 60 segundos
+            if (current_duration.count() > 60000000) break; // Tempo limite de 60 segundos
 
-            // Obtem o estado atual da fila de prioridade
-            Estado currente_Estado = pq.top();
-            pq.pop();
+            Estado currente_Estado = q.front();
+            q.pop();
             last_state = currente_Estado;
             num_expansoes++;
 
@@ -180,11 +178,10 @@ void instancias(int instancia_id, const vector<vector<int>>& map, int budget, in
                 break;
             }
 
-            // Gera os sucessores do estado atual e os adiciona na fila de prioridade
             vector<Estado> successores = gerar_successores(currente_Estado, map, budget);
-            num_geracoes += successores.size();  // atualiza o número de gerações
-            for (const auto& successor : successores) { // adiciona os sucessores na fila de prioridade
-                pq.push(successor);
+            num_geracoes += successores.size();
+            for (const auto& successor : successores) {
+                q.push(successor);
             }
         }
 
